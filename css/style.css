@@ -162,6 +162,25 @@ body {
         width: 100%;
         height: 100%;
     }
+    .container__main {
+        display: flex;
+        justify-content: center;
+    }
+    .main__text {
+        width: 280px;
+        padding: 0 60px 0;
+        height: 51px;
+        margin-top: 27px;
+        /* color: white; */
+        /* text-align: center; */
+        font-family: "Montserrat-Black";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #efefef;
+    }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
