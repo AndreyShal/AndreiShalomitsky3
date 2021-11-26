@@ -88,14 +88,25 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
-
 /*----------------------------------------------------------------------------------------------------*/
 body {
     background-color: #0b0b0b;
+    margin: 0 auto;
 }
-@media all and (max-width: 500px) {
+
+.container {
+    /* position: fixed; */
+    margin: 0 auto;
+    width: 100%;
+    /* padding: 0 15% 0; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px) {
     .wrapper {
-        width: 100%;
+        /* width: 100%; */
+        max-width: 360px;
         height: auto;
         margin: 0 auto;
     }
@@ -105,12 +116,16 @@ body {
         width: 100%;
         height: 45px;
         display: flex;
-        justify-content: space-around;
+        /* justify-content: space-around; */
+        /* margin-right: 30px; */
         background: linear-gradient(180deg, #0b0b0b 43.92%, rgba(11, 11, 11, 0.5) 100%);
+        z-index: 100;
     }
     .menuForAdaptive {
+        width: 20%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     .menu {
     }
@@ -118,7 +133,7 @@ body {
         display: none;
     }
     .container__group2 {
-        width: 80%;
+        width: 70%;
         height: 100%;
         display: flex;
         justify-content: space-around;
@@ -134,7 +149,7 @@ body {
     }
     /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
     .main__banner {
-        margin: 0 auto;
+        /* margin: 0 auto; */
         background: radial-gradient(77.49% 37.87% at 50% 50%, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 100%),
             url(../img/mainBanner/Rectangle\ 1.jpg) no-repeat;
         background-repeat: no-repeat;
@@ -170,7 +185,7 @@ body {
     }
     .main__text {
         width: 280px;
-        padding: 0 60px 0;
+        /* padding: 0 60px 0; */
         height: 51px;
         margin-top: 27px;
         /* color: white; */
@@ -186,11 +201,16 @@ body {
     /* /////////////////////////////////////////////////////////////////////////////////////////////*/
     .about__conference {
         /* identical to box height, or 36px */
+        /* margin: 0 auto; */
         display: block;
         margin: 0 auto;
         width: 100%;
         height: auto;
-        padding: 64px 10% 0;
+        padding: 64px 0 0;
+        /* padding: 0 10vw 0; */
+    }
+    .wrapper_abouttitle {
+        margin-left: 40px;
     }
     .about__title {
         font-family: "Roboto";
@@ -225,13 +245,26 @@ body {
         line-height: 22px;
         color: #ff00c6;
     }
+    .wrapper__inroduction {
+        /* display: flex;
+        flex-wrap: wrap;
+        margin: 10px; */
+        /* align-items: center; */
+    }
+    .inroduction__block {
+        margin-bottom: 130px;
+    }
     .inroduction__conference {
         position: relative;
+        margin-left: 58px;
+    }
+    .reassignInroduction__conference {
+        margin-right: 61px;
     }
     .rectangle34 {
         position: relative;
         margin-top: 71px;
-        margin-left: 5%;
+        /* margin-left: 5%; */
         width: 165px;
         height: 425px;
         background: #0b0b0b;
@@ -240,26 +273,39 @@ body {
         box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
         border-radius: 2px;
     }
+    .reassignRectangle34 {
+        margin-left: auto;
+        margin-right: 5%;
+    }
     .rectangle34__foto {
-        background: url(../img/about/Rectangle\ 5\ 1.jpg);
+        /* background: url(../img/about/Rectangle\ 5\ 1.jpg); */
         mix-blend-mode: normal;
         border-radius: 2px;
-        position: absolute;
+        position: relative;
         left: 32px;
         bottom: 32px;
         width: 165px;
         height: 432px;
+    }
+    .reassignRectangle34__Foto {
+        top: 32px;
+        left: -32px;
     }
     .rectangle34__foto img {
         width: 100%;
         height: 100%;
     }
     .inroduction__directed {
+        right: 20px;
+        top: 240px;
         width: 296px;
         height: 196px;
-        padding: 56px 8px 8px;
         position: absolute;
-        top: 170px;
+        background: rgba(11, 11, 11, 0.7);
+    }
+    .reassignInroduction__directed {
+        top: 290px;
+        left: -25px;
     }
     .inroduction__title {
         font-family: "Roboto";
