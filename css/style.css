@@ -121,6 +121,14 @@ body {
         align-items: center;
         color: #efefef;
     }
+    h5 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #efefef;
+    }
     h6 {
         font-family: "Montserrat-Black";
         font-style: normal;
@@ -361,6 +369,75 @@ body {
     }
     .speacers__text {
         margin-top: 32px;
+    }
+    .speacers__container {
+        width: 280px;
+        margin-top: 130px;
+        height: auto;
+    }
+    .rectangle32 {
+        width: 252px;
+        height: 276px;
+        /* left: 45px;
+        top: 3731px; */
+        background: #0b0b0b;
+        border: 1px solid #ff00c6;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
+        border-radius: 2px;
+    }
+    .rectangle32__foto {
+        position: relative;
+        width: 252px;
+        height: 268px;
+        left: 18px;
+        bottom: 71px;
+        border-radius: 2px;
+    }
+    .rectangle32__foto img {
+        width: 100%;
+        height: 100%;
+    }
+    .rectangle32__title {
+        position: relative;
+        width: 202px;
+        height: 46px;
+        margin: 0 auto;
+        bottom: 55px;
+    }
+    .bottom__speakers {
+        margin-top: 70px;
+        width: 201px;
+    }
+    .wrapper__program {
+        width: 360px;
+        height: 530px;
+        /* background: radial-gradient(35.4% 21.54% at 52.22% 53.81%, rgba(11, 11, 11, 0.5) 0%, #0b0b0b 100%),
+            url(../img/conferenceProgram/Rectangle\ 29.jpg); */
+        background: url(../img/conferenceProgram/Rectangle\ 29.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom bottom;
+        background-size: cover;
+    }
+    .comference__program {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 65px;
+    }
+    .program__title {
+        margin-bottom: 32px;
+    }
+    .timetable__title {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    .timetable__item {
+    }
+    .reassign__timetable {
+        opacity: 0.2;
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
