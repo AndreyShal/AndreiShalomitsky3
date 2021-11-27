@@ -99,9 +99,9 @@ body {
     margin: 0 auto;
     width: 100%;
     /* padding: 0 15% 0; */
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 @media screen and (max-width: 500px) {
     .wrapper {
@@ -225,8 +225,8 @@ body {
         margin-top: 32px;
         width: 280px;
         height: 66px;
-        height: auto;
-        ont-family: "Montserrat";
+        /* height: auto; */
+        font-family: "Montserrat-Regular";
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -251,7 +251,7 @@ body {
         margin: 10px; */
         /* align-items: center; */
     }
-    .inroduction__block {
+    .inroduction__block1 {
         margin-bottom: 130px;
     }
     .inroduction__conference {
@@ -323,6 +323,85 @@ body {
         font-size: 18px;
         line-height: 22px;
         color: #efefef;
+    }
+    .become__partner {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        width: 238px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 100px;
+        background-color: #0b0b0b;
+        color: #efefef;
+        border: 1px solid #ff00c6;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
+        border-radius: 2px;
+    }
+    .format__conference {
+        width: 360px;
+        height: 551px;
+        background: radial-gradient(104.34% 39.03% at 76.38% 50%, rgba(11, 11, 11, 0.6) 90%, #0b0b0b 99.37%),
+            url(../img/format/Rectangle\ 11.jpg);
+        /* background-image: url(../img/format/Rectangle11.png); */
+        background-repeat: no-repeat;
+        background-position: bottom bottom;
+        background-size: cover;
+    }
+    .format__title {
+        width: 280px;
+        height: 72px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0 auto;
+        margin-top: 66px;
+        /* or 36px */
+
+        /* белый текстовый */
+
+        color: #efefef;
+    }
+    .format__text {
+        margin: 0 auto;
+        margin-top: 32px;
+        color: #efefef;
+    }
+    .format__text h4 {
+        width: 280px;
+        height: 24px;
+        left: 40px;
+        top: 2847px;
+        margin: 0 auto;
+
+        /* робото 18 bold */
+
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+
+        /* белый текстовый */
+    }
+    .format__text span {
+        margin: 0 auto;
+        width: 280px;
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
