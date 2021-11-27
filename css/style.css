@@ -94,16 +94,60 @@ body {
     margin: 0 auto;
 }
 
-.container {
-    /* position: fixed; */
-    margin: 0 auto;
-    width: 100%;
-    /* padding: 0 15% 0; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
 @media screen and (max-width: 500px) {
+    h2 {
+        /* margin: 0 auto; */
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 100%;
+        color: #efefef;
+    }
+    h3 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #efefef;
+    }
+    h4 {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+
+        /* белый текстовый */
+
+        color: #efefef;
+    }
+    h6 {
+        font-family: "Montserrat-Black";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #efefef;
+    }
+    span {
+        font-family: "Montserrat-Regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+
+        /* светло-серый */
+
+        color: #e5e5e5;
+    }
     .wrapper {
         /* width: 100%; */
         max-width: 360px;
@@ -116,8 +160,6 @@ body {
         width: 100%;
         height: 45px;
         display: flex;
-        /* justify-content: space-around; */
-        /* margin-right: 30px; */
         background: linear-gradient(180deg, #0b0b0b 43.92%, rgba(11, 11, 11, 0.5) 100%);
         z-index: 100;
     }
@@ -140,10 +182,6 @@ body {
         align-items: center;
     }
     .group2 {
-        font-family: "Montserrat-Black";
-        font-size: 14px;
-        line-height: 17px;
-        color: #efefef;
     }
     .group2 span {
     }
@@ -185,18 +223,9 @@ body {
     }
     .main__text {
         width: 280px;
-        /* padding: 0 60px 0; */
         height: 51px;
         margin-top: 27px;
-        /* color: white; */
-        /* text-align: center; */
-        font-family: "Montserrat-Black";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
         text-align: center;
-        color: #efefef;
     }
     /* /////////////////////////////////////////////////////////////////////////////////////////////*/
     .about__conference {
@@ -213,12 +242,6 @@ body {
         margin-left: 40px;
     }
     .about__title {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 100%;
-        color: #efefef;
         text-align: center;
     }
     .about__txt {
@@ -226,13 +249,6 @@ body {
         width: 280px;
         height: 66px;
         /* height: auto; */
-        font-family: "Montserrat-Regular";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        text-align: left;
-        color: #efefef;
     }
     .expend {
         margin-top: 32px;
@@ -246,10 +262,6 @@ body {
         color: #ff00c6;
     }
     .wrapper__inroduction {
-        /* display: flex;
-        flex-wrap: wrap;
-        margin: 10px; */
-        /* align-items: center; */
     }
     .inroduction__block1 {
         margin-bottom: 130px;
@@ -308,28 +320,11 @@ body {
         left: -25px;
     }
     .inroduction__title {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 32px;
-        color: #efefef;
     }
     .inroduction__text {
         margin-top: 16px;
-        font-family: "Montserrat-Regular";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
-        color: #efefef;
     }
     .become__partner {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 32px;
         width: 238px;
         height: 44px;
         display: flex;
@@ -353,55 +348,38 @@ body {
         background-repeat: no-repeat;
         background-position: bottom bottom;
         background-size: cover;
+        margin-top: 66px;
+        margin-bottom: 100px;
     }
     .format__title {
         width: 280px;
         height: 72px;
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 36px;
         margin: 0 auto;
-        margin-top: 66px;
-        /* or 36px */
-
-        /* белый текстовый */
-
-        color: #efefef;
     }
     .format__text {
         margin: 0 auto;
         margin-top: 32px;
         color: #efefef;
     }
-    .format__text h4 {
+    .format__text {
         width: 280px;
         height: 24px;
         left: 40px;
         top: 2847px;
-        margin: 0 auto;
-
-        /* робото 18 bold */
-
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 24px;
-
-        /* белый текстовый */
     }
     .format__text span {
         margin: 0 auto;
         width: 280px;
-        font-family: "Montserrat-Regular";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
         display: flex;
         align-items: center;
+    }
+    .reassignFormat__conferenc {
+        height: auto;
+        /* margin-top: 30px; */
+    }
+    .reassignFormat__text {
+        height: auto;
+        /* margin-top: -30px */
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
