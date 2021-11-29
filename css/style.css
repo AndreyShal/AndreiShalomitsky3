@@ -93,7 +93,65 @@ body {
     background-color: #0b0b0b;
     margin: 0 auto;
 }
-
+.audience {
+    position: relative;
+    height: 432px;
+    width: 296px;
+    margin-bottom: 50px;
+    padding-top: 270px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.audience:after {
+    content: "";
+    display: block;
+    height: 432px;
+    width: 165px;
+    position: absolute;
+    z-index: -1;
+    top: 20px;
+    left: 40px;
+    border: 1px solid #ff00c6;
+    box-shadow: 4px 4px 30px rgb(123 0 143 / 76%);
+    border-radius: 2px;
+}
+.audience__text-wrapper {
+    color: #efefef;
+    background: rgba(11, 11, 11, 0.7);
+}
+.audience__title {
+    /* font-size: 24px;
+    line-height: 32px; */
+    margin-bottom: 16px;
+}
+.audience__description {
+    /* font-size: 18px;
+    line-height: 22px; */
+}
+.audience__designers {
+    margin-top: 32px;
+    margin-bottom: 100px;
+    background-image: url("../img/about/Rectangle\ 5\ 1.jpg");
+}
+.audience__professionals {
+    margin-bottom: 60px;
+    background-image: url("../img/about/Rectangle\ 6\ 1.jpg");
+}
+.audience__professionals:after {
+    top: -20px;
+    left: 90px;
+}
+.audience__suppliers:after {
+    top: -20px;
+    left: 90px;
+}
+.audience__newbies {
+    margin-bottom: 110px;
+    background-image: url("../img/about/Rectangle\ 7\ 1.jpg");
+}
+.audience__suppliers {
+    background-image: url("../img/about/Rectangle\ 8\ 1.jpg");
+}
 @media screen and (max-width: 500px) {
     h2 {
         font-family: "Roboto";
@@ -222,11 +280,9 @@ body {
     }
     /* /////////////////////////////////////////////////////////////////////////////////////////////*/
     .about__conference {
-        display: block;
         margin: 0 auto;
-        width: 100%;
+        width: 280px;
         height: auto;
-        padding: 64px 0 0;
     }
     .wrapper_abouttitle {
         margin-left: 40px;
@@ -250,7 +306,7 @@ body {
         line-height: 22px;
         color: #ff00c6;
     }
-    .wrapper__inroduction {
+    /* .wrapper__inroduction {
     }
     .inroduction__block1 {
         margin-bottom: 130px;
@@ -278,7 +334,6 @@ body {
         margin-right: 5%;
     }
     .rectangle34__foto {
-        /* background: url(../img/about/Rectangle\ 5\ 1.jpg); */
         mix-blend-mode: normal;
         border-radius: 2px;
         position: relative;
@@ -311,7 +366,8 @@ body {
     }
     .inroduction__text {
         margin-top: 16px;
-    }
+    } */
+
     .become__partner {
         width: 238px;
         height: 44px;
@@ -319,7 +375,7 @@ body {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        margin-top: 100px;
+        margin-top: 64px;
         background-color: #0b0b0b;
         color: #efefef;
         border: 1px solid #ff00c6;
@@ -506,25 +562,73 @@ body {
         margin-bottom: 58px;
     }
     .gallery__container {
+        position: relative;
     }
     .gallery__box {
-        position: relative;
+        overflow: hidden;
         width: 252px;
         height: 320px;
+        position: relative;
         mix-blend-mode: normal;
-        border: 1px solid #ff00c6;
-        box-sizing: border-box;
+        /* border: 1px solid #ff00c6; */
+        /* box-sizing: border-box; */
         filter: drop-shadow(4px 4px 30px rgba(123, 0, 143, 0.76));
         border-radius: 2px;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: center center;
         background-size: cover;
+        position: absolute;
+        animation: round 16s infinite;
+        opacity: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @keyframes round {
+        25% {
+            opacity: 1;
+        }
+        40% {
+            opacity: 0;
+        }
     }
     .gt1 {
-        background: url(../img/photoGallery/Rectangle\ 33.png);
+        background-image: url(../img/photoGallery/Rectangle\ 33.png);
+        animation-delay: 12s;
+    }
+    .gt2 {
+        background-image: url(../img/photoGallery/Rectangle\ 34.png);
+        animation-delay: 8s;
+    }
+    .gt3 {
+        background-image: url(../img/photoGallery/Rectangle\ 35.png);
+        animation-delay: 4s;
+    }
+    .gt4 {
+        background-image: url(../img/photoGallery/Rectangle\ 36.png);
+        animation-delay: 0s;
     }
     .gallery__date {
+        /* identical to box height */
+        position: relative;
+        width: 204px;
+        height: 127px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .gallery__date img {
+        width: 100%;
+        height: auto;
+    }
+    /* .gallery__date h2 {
+        font-weight: 900;
+        font-size: 96px;
+        line-height: 127px;
+        color: #ff00c680;
+        opacity: 0.5;
+    } */
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
