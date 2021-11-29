@@ -496,6 +496,35 @@ body {
         margin: 0 auto;
         width: 196px;
     }
+    .photo__gallery {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 68px;
+    }
+    .gallery__title {
+        margin: 0 auto;
+        margin-bottom: 58px;
+    }
+    .gallery__container {
+    }
+    .gallery__box {
+        position: relative;
+        width: 252px;
+        height: 320px;
+        mix-blend-mode: normal;
+        border: 1px solid #ff00c6;
+        box-sizing: border-box;
+        filter: drop-shadow(4px 4px 30px rgba(123, 0, 143, 0.76));
+        border-radius: 2px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
+    .gt1 {
+        background: url(../img/photoGallery/Rectangle\ 33.png);
+    }
+    .gallery__date {
+    }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
