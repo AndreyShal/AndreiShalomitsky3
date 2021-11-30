@@ -542,7 +542,7 @@ body {
         z-index: 2;
     }
     .slider .next {
-        right: 0;
+        right: 8px;
         border-radius: 3px 0 0 3px;
     }
     .slider .prev:hover,
