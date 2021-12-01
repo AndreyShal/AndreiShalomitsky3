@@ -498,7 +498,7 @@ body {
     }
     .gallery__title {
         margin: 0 auto;
-        margin-bottom: 58px;
+        margin-bottom: 28px;
     }
     .slider {
         width: 80%;
@@ -547,7 +547,7 @@ body {
     }
     .slider .prev:hover,
     .slider .next:hover {
-        /* background-color: rgba(0, 0, 0, 0); */
+        background-color: rgba(0, 0, 0, 0.1);
     }
     .slider-dots {
         text-align: center;
@@ -617,6 +617,166 @@ body {
     .gallery__date img {
         width: 100%;
         height: auto;
+    }
+    .place__event {
+        position: relative;
+        width: 360px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .place__title {
+        width: 287px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .place__map {
+        margin-top: 46px;
+        width: 100%;
+        height: 526px;
+        /* background: radial-gradient(50% 50% at 50% 50%, rgba(11, 11, 11, 0) 18.88%, #0b0b0b 100%),
+        url(../img/place/image\ 12.jpg); */
+        background-image: url(../img/place/map.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .place__text {
+        width: 295px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .place__point {
+        position: absolute;
+        width: 50px;
+        height: 67.38px;
+        bottom: 220px;
+        right: 157px;
+        background-image: url(../img/place/Vector.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .partners {
+        position: relative;
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .partners__title {
+        margin-top: 16px;
+        margin-bottom: 33px;
+    }
+    .general__partners {
+        /* position: relative; */
+    }
+    .general__name {
+        margin-bottom: 33px;
+    }
+    .general__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 151px;
+        margin-bottom: 32px;
+    }
+    .kerama {
+        width: 280px;
+        height: 58px;
+        background-image: url(../img/partners/general/Screenshot_1.png);
+    }
+    .size {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .home-heat {
+        width: 280px;
+        height: 78px;
+        background-image: url(../img/partners/general/home-heat.png);
+    }
+    .junior__partners {
+    }
+    .junior__name {
+        margin-bottom: 16px;
+    }
+    .junior__container {
+        height: 106px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* align-content: space-between; */
+    }
+    .junior__box {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .expostroy {
+        width: 117px;
+        height: 29px;
+        background-image: url(../img/partners/junior/expostroy.png);
+    }
+    .flatStone {
+        width: 109px;
+        height: 62px;
+        background-image: url(../img/partners/junior/flatStone.png);
+    }
+    .sofia {
+        width: 108px;
+        height: 13px;
+        background-image: url(../img/partners/junior/sofia.png);
+    }
+    .varman {
+        width: 108px;
+        height: 29px;
+        background-image: url(../img/partners/junior/varman.png);
+    }
+    .footer {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 64px;
+    }
+    .footer__line {
+        display: block;
+        width: 280px;
+        content: "";
+        opacity: 0.4;
+        border: 1px solid #efefef;
+        margin: 0 auto;
+    }
+    .social__networks {
+        position: relative;
+        margin-top: 17px;
+        width: 280px;
+        height: 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .social__networks .size {
+        width: 25px;
+        height: 25px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        opacity: 0.4;
+    }
+    .networks__instagram {
+        background-image: url(../img/socialNetworks/instagram.png);
+    }
+    .networks__vk {
+        background-image: url(../img/socialNetworks/vk.png);
+    }
+    .networks__facebook {
+        background-image: url(../img/socialNetworks/facebook.png);
+    }
+    .networks__twiter {
+        background-image: url(../img/socialNetworks/twiter.png);
+    }
+    .networks__telegram {
+        background-image: url(../img/socialNetworks/telegram.png);
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
