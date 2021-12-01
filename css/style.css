@@ -213,6 +213,7 @@ body {
     }
     .header {
         margin: 0 auto;
+        width: 360px;
         position: fixed;
         width: 100%;
         height: 45px;
@@ -286,11 +287,15 @@ body {
         height: auto;
     }
     .wrapper_abouttitle {
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
     .about__title {
         text-align: center;
     }
+    .about__title h2 {
+        font-size: 35px;
+    }
+
     .about__txt {
         margin-top: 32px;
         width: 280px;
@@ -777,6 +782,38 @@ body {
     }
     .networks__telegram {
         background-image: url(../img/socialNetworks/telegram.png);
+    }
+    .footer__text {
+        margin-top: 15px;
+    }
+    .footer__text span {
+        opacity: 0.4;
+        font-size: 12px;
+    }
+    .container__policy {
+        width: 100%;
+        height: 129px;
+        isplay: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .policy__cookie {
+    }
+    .policy__personal-information {
+    }
+    .policy__privacy {
+    }
+    .agreement {
+    }
+    .container__event {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .event__date {
+    }
+    .event__name {
     }
 }
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
