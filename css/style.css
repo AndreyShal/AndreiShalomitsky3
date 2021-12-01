@@ -215,7 +215,7 @@ body {
         margin: 0 auto;
         width: 360px;
         position: fixed;
-        width: 100%;
+        /* width: 100%; */
         height: 45px;
         display: flex;
         background: linear-gradient(180deg, #0b0b0b 43.92%, rgba(11, 11, 11, 0.5) 100%);
