@@ -255,7 +255,6 @@ body {
     .menu.open .menu__absolute {
         display: block;
     }
-    /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
     .menu .menu__absolute {
         display: none;
         /* list-style: none; */
@@ -270,6 +269,14 @@ body {
         background-position: center center;
         background-size: cover;
     }
+    .menu__absolute ul li {
+        margin-bottom: 24px;
+    }
+    .bottom__menu {
+        max-width: 184px;
+        height: 44px;
+    }
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
     .container__group2 {
         width: 87%;
         height: 100%;
