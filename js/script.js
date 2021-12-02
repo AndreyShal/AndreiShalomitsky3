@@ -34,3 +34,10 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
 }
+
+let menuElem = document.getElementById('sweeties');
+let titleElem = menuElem.querySelector('.title');
+
+titleElem.onclick = function () {
+    menuElem.classList.toggle('open');
+};

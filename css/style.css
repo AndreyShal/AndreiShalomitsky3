@@ -221,16 +221,54 @@ body {
         background: linear-gradient(180deg, #0b0b0b 43.92%, rgba(11, 11, 11, 0.5) 100%);
         z-index: 100;
     }
-    .menuForAdaptive {
+    /* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+    .menu {
         width: 13%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .menu {
-    }
     .menu ul {
+        margin: 0;
+        /* list-style: none; */
+        padding-left: 19px;
+        /* display: none; */
+    }
+    .menu .title {
+        /* font-size: 18px; */
+        cursor: pointer;
+    }
+    .menu .title::before {
+        content: url(../img/header/menu/menuBadge.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .menu.open .title::before {
+        content: url(../img/header/menu/arrow1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .menu.open .menu__absolute {
+        display: block;
+    }
+    /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+    .menu .menu__absolute {
         display: none;
+        /* list-style: none; */
+        position: absolute;
+        width: 304px;
+        height: 600px;
+        top: 43px;
+        left: 8px;
+        background-image: url(../img/header/menuFon.jpg);
+        /* z-index: 1; */
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     }
     .container__group2 {
         width: 87%;
