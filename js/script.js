@@ -41,3 +41,10 @@ let titleElem = menuElem.querySelector('.title');
 titleElem.onclick = function () {
     menuElem.classList.toggle('open');
 };
+
+
+// const menuLinks = document.querySelectorAll('.menu-link');
+
+// Array.from(menuLinks).forEach(link => {
+//     link.addEventListener()
+// })
