@@ -152,6 +152,120 @@ span {
     height: auto;
     margin: 0 auto;
 }
+/* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР НАЧАЛО........................ */
+/* User styles */
+/* @media screen and (min-width: 911px) {
+    .ant-carousel {
+        max-width: 810px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 910px) {
+    .ant-carousel {
+        max-width: 540px;
+    }
+} */
+
+@media screen and (min-width: 500px) {
+    .ant-carousel {
+        max-width: 99.9%;
+    }
+}
+
+.ant-carousel {
+    margin: 50px auto auto;
+    padding-top: 10px;
+    min-width: 100%;
+    max-width: 99vw;
+    /* border: 1px solid #ccd; */
+    /* background-color: white; */
+}
+
+.ant-carousel-element {
+    width: 345px;
+    /* margin: 0 -1px; */
+    text-align: center;
+}
+
+/* General styles */
+.ant-carousel {
+    width: auto;
+    position: relative;
+}
+
+.ant-carousel-hider {
+    overflow: hidden;
+}
+
+.ant-carousel-list {
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ant-carousel-element {
+    display: block;
+    flex: 0 0 auto;
+}
+
+/* Navigation item styles */
+div.ant-carousel-arrow-left,
+div.ant-carousel-arrow-right {
+    width: 22px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.6;
+    z-index: 32;
+    filter: invert(90%);
+}
+
+div.ant-carousel-arrow-left {
+    left: 30px;
+    top: 110%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
+}
+
+div.ant-carousel-arrow-right {
+    right: 30px;
+    top: 110%;
+    display: block;
+    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
+}
+
+div.ant-carousel-arrow-left:hover {
+    opacity: 1;
+}
+
+div.ant-carousel-arrow-right:hover {
+    opacity: 1;
+}
+
+div.ant-carousel-dots {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    z-index: 30;
+    text-align: center;
+}
+
+span.ant-dot {
+    width: 10px;
+    height: 10px;
+    margin: -40px 7px;
+    padding: 0;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР КОНЕЦ........................ */
 @media screen and (min-width: 500px) {
     .wrapper {
         width: 100%;
@@ -546,9 +660,9 @@ span {
 .format__conference {
     width: 100%;
     height: 459px;
-    /* background: radial-gradient(104.34% 39.03% at 76.38% 50%, rgba(11, 11, 11, 0.6) 90%, #0b0b0b 99.37%),
-        url(../img/format/Rectangle\ 11.jpg); */
-    background-image: url(../img/format/formatConference.png);
+    background: radial-gradient(99.06% 99.88% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0b0b0b 100%),
+        url(../img/format/formatConference.png);
+    /* background-image: url(../img/format/formatConference.png); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -564,12 +678,7 @@ span {
     margin: 0 auto;
     margin-top: 32px;
     color: #efefef;
-}
-.format__text {
     width: 280px;
-    height: 24px;
-    left: 40px;
-    top: 2847px;
 }
 .format__text span {
     margin: 0 auto;
@@ -595,6 +704,7 @@ span {
 .speakers {
     margin: 0 auto;
     width: 280px;
+    padding: 64px 0 0;
 }
 .speacers__title {
 }
@@ -609,8 +719,6 @@ span {
 .rectangle32 {
     width: 252px;
     height: 276px;
-    /* left: 45px;
-        top: 3731px; */
     background: #0b0b0b;
     border: 1px solid #ff00c6;
     box-sizing: border-box;
@@ -639,6 +747,52 @@ span {
 .bottom__speakers {
     margin-top: 70px;
     width: 201px;
+}
+@media screen and (min-width: 500px) {
+    .speakers {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0 40px 0;
+    }
+    .speacers__text span {
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .rectangle32 {
+        width: 311px;
+        height: 341px;
+        background: #0b0b0b;
+        border: 1px solid #ff00c6;
+        box-sizing: border-box;
+        box-shadow: 4.94245px 4.94245px 37.0683px rgba(123, 0, 143, 0.76);
+        border-radius: 2px;
+    }
+    .rectangle32__foto {
+        width: 311px;
+        height: 331px;
+        left: 18px;
+        bottom: 81px;
+        border-radius: 2px;
+    }
+    .rectangle32__title {
+        margin: 0 auto;
+        left: -18px;
+        /* padding: 0 0px 0px; */
+        /* margin: 0 auto; */
+        bottom: 55px;
+        /* text-align: center; */
+    }
+    .speacers__name {
+        width: 280px;
+    }
+    .tatiana h5 {
+        margin-top: -13px;
+    }
+    .rectangle32__title h5 {
+        font-size: 23px;
+        line-height: 32px;
+    }
+    /* ///////////////////////////////////// */
 }
 .wrapper__program {
     position: relative;
