@@ -169,22 +169,20 @@ span {
 @media screen and (min-width: 500px) {
     .ant-carousel {
         max-width: 99.9%;
+        margin-bottom: 130px;
     }
 }
 
 .ant-carousel {
-    margin: 50px auto auto;
+    /* margin: 50px auto auto; */
+    /* left: -40px; */
     padding-top: 10px;
-    min-width: 100%;
-    max-width: 99vw;
-    /* border: 1px solid #ccd; */
-    /* background-color: white; */
 }
 
 .ant-carousel-element {
-    width: 345px;
+    width: 375px;
     /* margin: 0 -1px; */
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* General styles */
@@ -199,8 +197,8 @@ span {
 
 .ant-carousel-list {
     width: auto;
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: 40px;
     list-style-type: none;
     display: flex;
     justify-content: flex-start;
@@ -224,14 +222,14 @@ div.ant-carousel-arrow-right {
 }
 
 div.ant-carousel-arrow-left {
-    left: 30px;
+    left: 20vw;
     top: 110%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
 }
 
 div.ant-carousel-arrow-right {
-    right: 30px;
+    right: 20vw;
     top: 110%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
@@ -752,11 +750,14 @@ span.ant-dot {
     .speakers {
         margin: 0 auto;
         width: 100%;
+    }
+    .speacers__title {
         padding: 0 40px 0;
     }
     .speacers__text span {
         font-size: 24px;
         line-height: 150%;
+        padding: 0 40px 0;
     }
     .rectangle32 {
         width: 311px;
