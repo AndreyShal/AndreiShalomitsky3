@@ -1,65 +1,29 @@
 "use strict"
 
-var slideIndex = 1;
-showSlides(slideIndex);
+// var slideIndex = 1;
+// showSlides(slideIndex);
 
-function plusSlide() {
-    showSlides(slideIndex += 1);
-}
-
-function minusSlide() {
-    showSlides(slideIndex -= 1);
-}
-
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("item");
-    var dots = document.getElementsByClassName("slider-dots_item");
-    if (n > slides.length) {
-        slideIndex = 1
-    }
-    if (n < 1) {
-        slideIndex = slides.length
-    }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-// ............................................................................................
-
-// var slideIndex1 = 1;
-// showSlides1(slideIndex1);
-
-// function plusSlide1() {
-//     showSlides1(slideIndex1 += 1);
+// function plusSlide() {
+//     showSlides(slideIndex += 1);
 // }
 
-// function minusSlide1() {
-//     showSlides1(slideIndex1 -= 1);
+// function minusSlide() {
+//     showSlides(slideIndex -= 1);
 // }
 
-// function currentSlide1(n) {
-//     showSlides1(slideIndex1 = n);
+// function currentSlide(n) {
+//     showSlides(slideIndex = n);
 // }
 
-// function showSlides1(n) {
+// function showSlides(n) {
 //     var i;
-//     var slides = document.getElementsByClassName("speacer__wrapper");
-//     var dots = document.getElementsByClassName("slider-dots_spc__cont");
+//     var slides = document.getElementsByClassName("item");
+//     var dots = document.getElementsByClassName("slider-dots_item");
 //     if (n > slides.length) {
-//         slideIndex1 = 1
+//         slideIndex = 1
 //     }
 //     if (n < 1) {
-//         slideIndex1 = slides.length
+//         slideIndex = slides.length
 //     }
 //     for (i = 0; i < slides.length; i++) {
 //         slides[i].style.display = "none";
@@ -67,8 +31,8 @@ function showSlides(n) {
 //     for (i = 0; i < dots.length; i++) {
 //         dots[i].className = dots[i].className.replace(" active", "");
 //     }
-//     slides[slideIndex1 - 1].style.display = "block";
-//     dots[slideIndex1 - 1].className += " active";
+//     slides[slideIndex - 1].style.display = "block";
+//     dots[slideIndex - 1].className += " active";
 // }
 // ............................................................................................
 let menuElem = document.getElementById('sweeties');
@@ -100,6 +64,7 @@ function Ant(crslId) {
     this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
     this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
     this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
+
     this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
     this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
     this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
@@ -112,7 +77,7 @@ function Ant(crslId) {
 Ant.defaults = {
 
     // Default options for the carousel
-    elemVisible: 2, // Кол-во отображаемых элементов в карусели
+    elemVisible: 1, // Кол-во отображаемых элементов в карусели
     loop: true,     // Бесконечное зацикливание карусели 
     auto: false,     // Автоматическая прокрутка
     interval: 5000, // Интервал между прокруткой элементов (мс)
