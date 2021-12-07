@@ -51,7 +51,6 @@ titleElem.onclick = function () {
 
 /* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР НАЧАЛО........................ */
 function Ant(crslId) {
-
     let id = document.getElementById(crslId);
     if (id) {
         this.crslRoot = id
@@ -64,7 +63,6 @@ function Ant(crslId) {
     this.crslList = this.crslRoot.querySelector('.ant-carousel-list');
     this.crslElements = this.crslList.querySelectorAll('.ant-carousel-element');
     this.crslElemFirst = this.crslList.querySelector('.ant-carousel-element');
-
     this.leftArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-left');
     this.rightArrow = this.crslRoot.querySelector('div.ant-carousel-arrow-right');
     this.indicatorDots = this.crslRoot.querySelector('div.ant-carousel-dots');
@@ -282,5 +280,6 @@ Ant.initialize = function (that) {
     }
 };
 
-new Ant();
+new Ant("slide-one");
+new Ant("slide-two");
 /* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР КОНЕЦ........................ */
