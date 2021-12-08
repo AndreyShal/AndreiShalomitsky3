@@ -4,6 +4,7 @@
 <head>
     <title>DESIGN</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="swiper/swiper-bundle.min.css" />
     <link rel="icon" href="data:;base64,=">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes,initial-scale=1">
@@ -365,7 +366,42 @@
             <div class="gallery__title">
                 <h2>Фотогалерея</h2>
             </div>
-            <div id="slide-two" class="ant-carousel slide-two">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item gt1">
+                            <div class="gallery__date">
+                                <img src="img/photoGallery/2017.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item gt2">
+                            <div class="gallery__date">
+                                <img src="img/photoGallery/2018.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item gt3">
+                            <div class="gallery__date">
+                                <img src="img/photoGallery/2019.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item gt4">
+                            <div class="gallery__date">
+                                <img src="img/photoGallery/2020.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- <div id="slide-two" class="ant-carousel slide-two">
                 <div class="ant-carousel-hider">
                     <ul class="ant-carousel-list">
                         <li class="ant-carousel-element">
@@ -401,7 +437,7 @@
                 <div id="carousel_2" class="ant-carousel-arrow-left"></div>
                 <div id="carousel_2" class="ant-carousel-arrow-right"></div>
                 <div id="carousel_2" class="ant-carousel-dots"></div>
-            </div>
+            </div> -->
         </div>
         <div class="place__event">
             <div class="place__title">
@@ -470,6 +506,7 @@
             </div>
         </div>
     </div>
+    <script src="swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

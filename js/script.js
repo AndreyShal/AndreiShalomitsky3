@@ -280,6 +280,29 @@ Ant.initialize = function (that) {
     }
 };
 
-new Ant("slide-one");
-new Ant("slide-two");
+// new Ant("slide-one");
+// new Ant("slide-two");
 /* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР КОНЕЦ........................ */
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
+// .....................................................................
