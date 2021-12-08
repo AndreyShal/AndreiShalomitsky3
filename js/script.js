@@ -285,26 +285,68 @@ Ant.initialize = function (that) {
 /* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР КОНЕЦ........................ */
 /* ..........................................SWIPER СЛАЙДЕР НАЧАЛО........................ */
 
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
+
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//         //Буллеты
+//         clickable: true,
+//         //Динамические буллеты
+//         dynamicBullets: true,
+//         //Кастомные буллеты
+//         // renderBullet: function (index, className) {
+//         //     return 'span class="' + className + '">' + (index + 1) + '</span>';
+//         // },
+//         /*
+//         */
+//         //Автовысота
+//         autoHeight: true,
+
+//         //Колличество слайдов для показа
+//         slidesPerView: 1.2,
+
+//         //Отключение функционала если слайдов меньше, чем нужно
+//         // watchOverflow: true,
+
+//         //Отступ между слайдами
+//         spaceBetween: 0,
+//     },
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+    // Default parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 320px
+        360: {
+            slidesPerView: 1.5,
+            spaceBetween: 50
+        },
+        // when window width is >= 480px
+        500: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        },
+        // when window width is >= 640px
+        768: {
+            slidesPerView: 4,
+            spaceBetween: 40
+        }
+    }
+})
 /* ..........................................SWIPER СЛАЙДЕР КОНЕЦ........................ */
 // .....................................................................

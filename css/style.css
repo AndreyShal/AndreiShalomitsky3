@@ -974,8 +974,9 @@ span.ant-dot {
     margin: 0 auto;
     margin-top: 68px;
     overflow: hidden;
-    overflow-y: hidden; /*для вертикального*/
-    overflow-x: hidden; /*для горизонтального*/
+    /* overflow-y: hidden; для вертикального */
+    /* overflow-x: hidden; для горизонтального */
+    min-width: 0;
 }
 .gallery__title {
     margin: 0 auto;
@@ -984,8 +985,8 @@ span.ant-dot {
 }
 .photo-galery__wrapper .item {
     /* margin: 0 auto; */
-    width: 280px;
-    height: 340px;
+    width: 320px;
+    height: 380px;
     position: relative;
     /* margin: 0 auto; */
     /* mix-blend-mode: normal; */
@@ -998,6 +999,7 @@ span.ant-dot {
     display: flex;
     align-items: center;
     justify-content: center;
+    min-width: 0;
 }
 .gt1 {
     background-image: url(../img/photoGallery/Rectangle\ 33.png);
@@ -1032,11 +1034,21 @@ span.ant-dot {
 }
 .photo-galery__wrapper .swiper {
     width: 100%;
+    /* height: auto; */
 }
-.photo-galery__wrapper .swiper {
-    width: 280px;
-    margin: 0 auto;
-    height: auto;
+.photo-galery__wrapper .swiper-wrapper {
+}
+.photo-galery__wrapper.swiper-slide {
+}
+
+.photo-galery__wrapper .swiper-pagination {
+    display: none;
+}
+.photo-galery__wrapper .swiper-button-prev {
+    display: none;
+}
+.photo-galery__wrapper .swiper-button-next {
+    display: none;
 }
 @media screen and (min-width: 500px) {
     .photo-galery__wrapper {
@@ -1049,9 +1061,6 @@ span.ant-dot {
         width: 700px;
         margin: 0 auto;
         margin-top: 150px;
-    }
-    .photo-galery__wrapper .foto-galery {
-        width: 375px;
     }
 }
 .place__event {
