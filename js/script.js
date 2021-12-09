@@ -325,27 +325,60 @@ Ant.initialize = function (that) {
 //         el: '.swiper-scrollbar',
 //     },
 // });
-const swiper = new Swiper('.swiper', {
+var swiper1 = new Swiper('.swiper1', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
     // Default parameters
-    slidesPerView: 1,
+    slidesPerView: 0,
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
+    // Responsive breakpoints
+    breakpoints: {
+        // when window width is >= 360px
+        360: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+        },
+        // when window width is >= 768px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        // when window width is >= 1378px
+        1378: {
+            slidesPerView: 4,
+            spaceBetween: 60
+        },
+    }
+})
+
+var swiper2 = new Swiper('.swiper2', {
+    // Default parameters
+    slidesPerView: 0,
     spaceBetween: 10,
     // Responsive breakpoints
     breakpoints: {
-        // when window width is >= 320px
+        // when window width is >= 360px
         360: {
             slidesPerView: 1.5,
             spaceBetween: 50
         },
-        // when window width is >= 480px
-        500: {
-            slidesPerView: 3,
-            spaceBetween: 30
-        },
-        // when window width is >= 640px
+        // when window width is >= 768px
         768: {
+            slidesPerView: 2.8,
+            spaceBetween: 90
+        },
+        // when window width is >= 1378px
+        1378: {
             slidesPerView: 4,
-            spaceBetween: 40
-        }
+            spaceBetween: 60
+        },
     }
 })
 /* ..........................................SWIPER СЛАЙДЕР КОНЕЦ........................ */

@@ -708,35 +708,6 @@ span.ant-dot {
     }
 }
 @media screen and (max-width: 500px) {
-    .speakers .ant-carousel,
-    .speakers .ant-carousel-hider,
-    .speakers .ant-carousel-list,
-    .speakers .ant-carousel-element {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-    }
-    .speakers .ant-carousel-arrow-left {
-        display: none;
-    }
-    .speakers .ant-carousel-arrow-right {
-        display: none;
-    }
-    .speakers .ant-carousel-dots {
-        display: none;
-    }
-    .speacers__container {
-        margin: 0 auto;
-    }
-    .speacers__title {
-        width: 280px;
-        margin: 0 auto;
-    }
-    .speacers__text {
-        width: 280px;
-        margin: 0 auto;
-        margin-top: 32px;
-    }
 }
 .speakers {
     margin: 0 auto;
@@ -744,11 +715,14 @@ span.ant-dot {
     padding: 64px 0 0;
 }
 .speacers__title {
+    padding: 0 40px 0;
 }
 .speacers__text {
     margin-top: 32px;
+    padding: 0 40px 0;
 }
 .speacers__container {
+    margin: 0 auto;
     width: 280px;
     margin-top: 130px;
     height: auto;
@@ -786,8 +760,22 @@ span.ant-dot {
     margin-top: 70px;
     width: 201px;
 }
+.speacers__mobail {
+}
+@media only screen and (max-width: 500px) {
+    .swiper1 {
+        display: none;
+    }
+}
 
 @media screen and (min-width: 500px) {
+    .speacers__mobail {
+        display: none;
+    }
+    .speacers__container {
+        display: flex;
+        justify-content: space-around;
+    }
     .speakers {
         margin: 0 auto;
         width: 100%;
@@ -833,6 +821,19 @@ span.ant-dot {
     .rectangle32__title h5 {
         font-size: 23px;
         line-height: 32px;
+    }
+    .swiper1 {
+        height: 550px;
+    }
+    .swiper1 .swiper-pagination {
+    }
+    .swiper1 .swiper-button-prev {
+        top: 95%;
+        left: 20vw;
+    }
+    .swiper1 .swiper-button-next {
+        top: 95%;
+        right: 20vw;
     }
     /* ///////////////////////////////////// */
 }
@@ -1065,12 +1066,13 @@ span.ant-dot {
 }
 .place__event {
     position: relative;
-    width: 360px;
+    /* width: 360px; */
     margin: 0 auto;
     margin-top: 50px;
 }
 .place__title {
-    width: 287px;
+    /* width: 287px; */
+    padding: 0 26px 0;
     margin: 0 auto;
     position: relative;
 }
@@ -1081,12 +1083,13 @@ span.ant-dot {
     background-image: url(../img/place/map.png);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
 }
 .place__text {
-    width: 295px;
+    /* width: 295px; */
     margin: 0 auto;
     position: relative;
+    padding: 0 26px 0;
 }
 .place__point {
     position: absolute;
@@ -1098,6 +1101,37 @@ span.ant-dot {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+}
+@media screen and (min-width: 500px) {
+    .place__event {
+        width: 460px;
+        margin: 0 auto;
+    }
+    /* .place__title {
+        padding: 0 40px 0;
+    }
+    .place__text {
+        padding: 0 40px 0;
+    } */
+}
+@media screen and (min-width: 768px) {
+    .place__event {
+        width: 700px;
+        margin: 0 auto;
+    }
+    .place__title {
+        padding: 0 40px 0;
+    }
+    .place__text {
+        padding: 0 40px 0;
+    }
+    .place__point {
+        height: 526px;
+    }
+    .place__point {
+        bottom: -13px;
+        right: 327px;
+    }
 }
 .partners {
     position: relative;
