@@ -153,118 +153,6 @@ span {
     height: auto;
     margin: 0 auto;
 }
-/* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР НАЧАЛО........................ */
-/* User styles */
-/* @media screen and (min-width: 911px) {
-    .ant-carousel {
-        max-width: 810px;
-    }
-}
-
-@media screen and (min-width: 641px) and (max-width: 910px) {
-    .ant-carousel {
-        max-width: 540px;
-    }
-} */
-
-@media screen and (min-width: 500px) {
-    .ant-carousel {
-        /* max-width: 99.9%; */
-        margin-bottom: 130px;
-    }
-}
-
-.ant-carousel {
-    /* margin: 50px auto auto; */
-    /* left: -40px; */
-    padding-top: 10px;
-}
-
-.ant-carousel-element {
-    width: 375px;
-    /* margin: 0 -1px; */
-    /* text-align: center; */
-}
-
-/* General styles */
-.ant-carousel {
-    width: auto;
-    position: relative;
-}
-
-.ant-carousel-hider {
-    overflow: hidden;
-}
-
-.ant-carousel-list {
-    width: auto;
-    margin: auto;
-    padding: 40px;
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.ant-carousel-element {
-    display: block;
-    flex: 0 0 auto;
-}
-
-/* Navigation item styles */
-div.ant-carousel-arrow-left,
-div.ant-carousel-arrow-right {
-    width: 22px;
-    height: 40px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0.6;
-    z-index: 32;
-    filter: invert(90%);
-}
-
-div.ant-carousel-arrow-left {
-    left: 20vw;
-    top: 110%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-left.png") no-repeat;
-}
-
-div.ant-carousel-arrow-right {
-    right: 20vw;
-    top: 110%;
-    display: block;
-    background: url("http://pvbk.spb.ru/inc/carousel/ant-files/ant-arrow-right.png") no-repeat;
-}
-
-div.ant-carousel-arrow-left:hover {
-    opacity: 1;
-}
-
-div.ant-carousel-arrow-right:hover {
-    opacity: 1;
-}
-
-div.ant-carousel-dots {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-    z-index: 30;
-    text-align: center;
-}
-
-span.ant-dot {
-    width: 10px;
-    height: 10px;
-    margin: -40px 7px;
-    padding: 0;
-    display: inline-block;
-    background-color: #bbb;
-    border-radius: 5px;
-    cursor: pointer;
-}
-/* ..........................................УНИВЕРСАЛЬНЫЙ СЛАЙДЕР КОНЕЦ........................ */
 /* ..........................................СЛАЙДЕР SWIPER НАЧАЛО........................ */
 .swiper {
     /* width: 280px; */
@@ -340,8 +228,8 @@ span.ant-dot {
     display: none;
     /* list-style: none; */
     position: absolute;
-    width: 316px;
-    height: 600px;
+    width: 100vw;
+    height: 100vh;
     top: 43px;
     left: 8px;
     background-image: url(../img/header/menuFon.jpg);
@@ -1346,7 +1234,15 @@ span.ant-dot {
 }
 .event__name {
 }
+@media screen and (min-width: 360px) {
+    .agreement {
+        margin-bottom: 42px;
+    }
+}
 @media screen and (min-width: 500px) {
+    .agreement {
+        margin-bottom: 42px;
+    }
 }
 @media screen and (min-width: 768px) {
     .footer__line {
