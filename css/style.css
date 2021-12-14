@@ -378,10 +378,14 @@ span {
     }
 }
 @media screen and (min-width: 1378px) {
+    .main__banner {
+        position: relative;
+    }
     .main__design {
         margin-top: 72px;
         width: 1030px;
         height: 380px;
+        position: relative;
     }
     .main__conference {
         width: 684px;
@@ -400,10 +404,10 @@ span {
         display: block;
         width: 100%;
         height: auto;
-        position: fixed;
+        position: absolute;
     }
     .main__banner .header__desctop {
-        position: fixed;
+        position: absolute;
         top: 10px;
     }
     .header__desctop .menu__absolute {
@@ -439,7 +443,7 @@ span {
         border-radius: 50%;
     }
     .hdr-dest__right {
-        position: fixed;
+        position: absolute;
         max-width: 300px;
         top: 0;
         right: 0;
@@ -681,6 +685,8 @@ span {
         line-height: 22px;
     }
     .audience__container {
+        width: 1020px;
+        margin: 0 auto;
     }
     .audience__block {
         flex-direction: column;
@@ -823,6 +829,47 @@ span {
 }
 @media screen and (max-width: 500px) {
 }
+@media screen and (min-width: 1378px) {
+    .format__wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 95px;
+
+        /* margin-bottom: -100px; */
+    }
+    .format__conference {
+        width: 100%;
+        height: 800px;
+        background: radial-gradient(77.49% 37.87% at right, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
+            url(../img/format/formatConference.png) no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .format__title {
+        margin: 0 auto;
+        width: 1030px;
+    }
+    .format__text {
+        height: auto;
+        margin: 0 auto;
+        width: 1030px;
+    }
+    .format__text h3 {
+        max-width: 425px;
+        height: auto;
+    }
+    .format__container {
+        margin: 0 auto;
+    }
+    .format__blok {
+        width: 425px;
+    }
+    .format__blok .text {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
 .speakers {
     margin: 0 auto;
     /* width: 280px; */
@@ -951,6 +998,86 @@ span {
     }
     /* ///////////////////////////////////// */
 }
+@media screen and (min-width: 1378px) {
+    .speakers {
+        margin: 0 auto;
+        width: 100%;
+        width: 1030px;
+        height: auto;
+        margin-top: -400px;
+    }
+    .speacers__mobail {
+        display: none;
+    }
+    .speacers__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .speacers__title {
+        padding: 0;
+        width: 100%;
+    }
+    .speacers__text {
+        padding: 0;
+        width: 100%;
+    }
+    .speacers__text span {
+        font-size: 18px;
+        line-height: 22px;
+        width: 100%;
+        padding: 0;
+    }
+    .rectangle32 {
+        width: 252px;
+        height: 276px;
+        background: #0b0b0b;
+        border: 1px solid #ff00c6;
+        box-sizing: border-box;
+        box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
+        border-radius: 2px;
+    }
+    .rectangle32__foto {
+        width: 252px;
+        height: 267px;
+        left: 8px;
+        bottom: 81px;
+        border-radius: 2px;
+    }
+    .rectangle32__title {
+        margin: 0 auto;
+        left: 2px;
+        /* padding: 0 0px 0px; */
+        /* margin: 0 auto; */
+        bottom: 55px;
+        /* text-align: center; */
+    }
+    .speacers__name {
+        width: 202px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .tatiana h5 {
+        margin-top: -13px;
+    }
+    .rectangle32__title h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .swiper1 {
+        height: 550px;
+        margin-top: 50px;
+    }
+    .swiper1 .swiper-pagination {
+    }
+    .swiper1 .swiper-button-prev {
+        top: 95%;
+        left: 20vw;
+    }
+    .swiper1 .swiper-button-next {
+        top: 95%;
+        right: 20vw;
+    }
+}
 .wrapper__program {
     position: relative;
     box-sizing: border-box;
@@ -962,7 +1089,7 @@ span {
     background: url(../img/conferenceProgram/Rectangle\ 29.jpg);
     background-repeat: no-repeat;
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
 }
 .comference__program {
     /* width: 280px; */

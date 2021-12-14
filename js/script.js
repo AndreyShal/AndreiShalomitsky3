@@ -77,8 +77,8 @@ var swiper1 = new Swiper('.swiper1', {
         },
         // when window width is >= 1378px
         1378: {
-            slidesPerView: 4,
-            spaceBetween: 60
+            slidesPerView: 3,
+            spaceBetween: 100
         },
     }
 })
@@ -101,8 +101,8 @@ var swiper2 = new Swiper('.swiper2', {
         },
         // when window width is >= 1378px
         1378: {
-            slidesPerView: 4,
-            spaceBetween: 60
+            slidesPerView: 3,
+            spaceBetween: 90
         },
     }
 })
