@@ -89,13 +89,13 @@ h6 {
     font-size: inherit;
     font-weight: inherit;
 }
+
 /*----------------------------------------------------------------------------------------------------*/
 body {
     background-color: #0b0b0b;
     margin: 0 auto;
     overflow-x: hidden;
 }
-
 h2 {
     font-family: "Roboto";
     font-style: normal;
@@ -104,6 +104,10 @@ h2 {
     line-height: 100%;
     color: #efefef;
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
+}
 h3 {
     font-family: "Roboto";
     font-style: normal;
@@ -111,6 +115,10 @@ h3 {
     font-size: 18px;
     line-height: 24px;
     color: #efefef;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
 }
 h4 {
     font-family: "Roboto";
@@ -122,6 +130,10 @@ h4 {
     align-items: center;
     color: #efefef;
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
+}
 h5 {
     font-family: "Roboto";
     font-style: normal;
@@ -130,13 +142,21 @@ h5 {
     line-height: 24px;
     color: #efefef;
 }
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
+}
 h6 {
     font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
     color: #efefef;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
 }
 span {
     font-family: "Montserrat-Regular";
@@ -147,6 +167,10 @@ span {
     display: flex;
     align-items: center;
     color: #e5e5e5;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1378px) {
 }
 .wrapper {
     width: 100%;
@@ -232,7 +256,7 @@ span {
     height: 100vh;
     top: 43px;
     left: 8px;
-    background-image: url(../img/header/menuFon.jpg);
+    background-image: url(../img/header/menuFon1.png);
     /* z-index: 1; */
     background-repeat: no-repeat;
     background-position: center center;
@@ -253,11 +277,16 @@ span {
     justify-content: space-around;
     align-items: center;
 }
+@media screen and (min-width: 1378px) {
+    .header {
+        display: none;
+    }
+}
 /* //////////////////////////////////////////////////////////////////////////////////////////////////// */
 .main__banner {
-    /* background: radial-gradient(77.49% 37.87% at 50% 50%, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 100%),
-        url(../img/mainBanner/Rectangle\ 1.jpg) no-repeat; */
-    background-image: url(../img/mainBanner/Rectangle\ 1.jpg);
+    background: radial-gradient(77.49% 37.87% at top, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
+        url(../img/mainBanner/Rectangle\ 1.jpg) no-repeat;
+    /* background-image: url(../img/mainBanner/Rectangle\ 1.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -297,6 +326,9 @@ span {
     margin-top: 27px;
     text-align: center;
 }
+.header__desctop {
+    display: none;
+}
 @media screen and (min-width: 500px) {
     .main__banner {
         width: 100%;
@@ -332,8 +364,8 @@ span {
         height: 254px;
     }
     .main__conference {
-        height: 53px;
         width: 457px;
+        height: 53px;
         margin-top: -70px;
     }
     .main__text {
@@ -345,6 +377,89 @@ span {
         text-align: left;
     }
 }
+@media screen and (min-width: 1378px) {
+    .main__design {
+        margin-top: 72px;
+        width: 1030px;
+        height: 380px;
+    }
+    .main__conference {
+        width: 684px;
+        height: 79px;
+        margin-top: -90px;
+    }
+    .main__text {
+        width: 100%;
+        margin-bottom: 180px;
+    }
+    .main__text h6 {
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .header__desctop {
+        display: block;
+        width: 100%;
+        height: auto;
+        position: fixed;
+    }
+    .main__banner .header__desctop {
+        position: fixed;
+        top: 10px;
+    }
+    .header__desctop .menu__absolute {
+        max-width: 300px;
+        padding-left: 14px;
+    }
+    .header__desctop .menu__absolute h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .header__desctop .menu__absolute ul:after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 17.7px;
+        width: 1px;
+        height: calc(100% - 40px);
+        background: #e5e5e5;
+    }
+    .header__desctop .menu__absolute ul > li {
+        padding-left: 20px;
+        position: relative;
+        margin: 10px 0;
+    }
+    .header__desctop .menu__absolute ul > li:before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        width: 9px;
+        height: 9px;
+        background: #e5e5e5;
+        border-radius: 50%;
+    }
+    .hdr-dest__right {
+        position: fixed;
+        max-width: 300px;
+        top: 0;
+        right: 0;
+    }
+    .hdr-dest__right .become__partner {
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    .hdr-dest__right .container__group2 {
+        height: 343px;
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: right;
+        margin-left: 80px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
 /* /////////////////////////////////////////////////////////////////////////////////////////////*/
 .about__conference {
     box-sizing: border-box;
@@ -354,6 +469,9 @@ span {
 }
 .about__txt {
     margin-top: 32px;
+}
+.about__txt__desctop {
+    display: none;
 }
 .about__title {
     text-align: center;
@@ -547,9 +665,116 @@ span {
 }
 @media screen and (min-width: 1378px) {
     .about__conference {
-        width: 1200px;
+        width: 1030px;
         margin: 0 auto;
     }
+    .about__conference h2 {
+        font-size: 48px;
+        line-height: 63px;
+    }
+    .about__txt {
+        display: none;
+    }
+    .about__txt__desctop {
+        display: block;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .audience__container {
+    }
+    .audience__block {
+        flex-direction: column;
+        width: 48%;
+        height: 957px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .audience {
+        width: 165px;
+        height: 432px;
+        margin-bottom: 3px;
+        padding-top: 101px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+    .audience:after {
+        width: 165px;
+        height: 425px;
+        top: 39px;
+        left: 27px;
+        box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
+    }
+    .audience__designers:after {
+        top: 33px;
+        left: -28px;
+    }
+    .audience__newbies:after {
+        top: 33px;
+        left: -28px;
+    }
+    .audience__suppliers:after {
+        top: -25px;
+        left: 28px;
+    }
+    .audience__professionals:after {
+        top: -25px;
+        left: 28px;
+    }
+    .audience__designers,
+    .audience__newbies {
+        margin-top: 40px;
+        margin-right: 280px;
+    }
+    .audience__professionals,
+    .audience__suppliers {
+        margin-left: 210px;
+        margin-top: -40px;
+    }
+    .audience__text-wrapper {
+        width: 357px;
+        height: 202px;
+        margin-left: 0;
+    }
+    .audience__text-wrapper h4 {
+        font-size: 36px;
+        line-height: 100%;
+    }
+    .audience__designers .audience__text-wrapper {
+        margin-left: 144px;
+    }
+    .audience__professionals .audience__text-wrapper {
+        margin-left: -170px;
+        margin-top: 90px;
+    }
+    .audience__newbies .audience__text-wrapper {
+        margin-left: 86px;
+    }
+    .audience__suppliers .audience__text-wrapper {
+        margin-left: -170px;
+        margin-top: 90px;
+    }
+    /* .audience__text-wrapper.audience__professionals {
+        margin-right: 100px;
+    } */
+    /* .audience__block .audience__designers {
+        margin-right: 200px;
+    }
+    .audience__block .audience__professionals {
+        margin-left: 200px;
+        margin-top: -100px;
+    }
+    .audience__block .audience__newbies {
+        margin-right: 200px;
+        margin-top: 50px;
+    }
+    .audience__block .audience__suppliers {
+        margin-left: 200px;
+        margin-top: -100px;
+    } */
 }
 .format__conference {
     width: 100%;
@@ -574,6 +799,7 @@ span {
     color: #efefef;
     width: 280px;
 }
+
 .format__text span {
     margin: 0 auto;
     width: 280px;
