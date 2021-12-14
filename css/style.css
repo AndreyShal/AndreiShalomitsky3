@@ -1071,11 +1071,11 @@ span {
     }
     .swiper1 .swiper-button-prev {
         top: 95%;
-        left: 20vw;
+        left: 15vw;
     }
     .swiper1 .swiper-button-next {
         top: 95%;
-        right: 20vw;
+        right: 15vw;
     }
 }
 .wrapper__program {
@@ -1152,7 +1152,20 @@ span {
         margin: 0 auto;
     }
 }
-
+@media screen and (min-width: 1378px) {
+    .wrapper__program {
+        width: 100%;
+        margin: 0 auto;
+        height: 1400px;
+        /* background: radial-gradient(35.4% 21.54% at 52.22% 53.81%, rgba(11, 11, 11, 0.5) 0%, #0b0b0b 100%),
+            url(../img/conferenceProgram/Rectangle\ 29.jpg); */
+        background-size: contain;
+    }
+    .program__container {
+        width: 1030px;
+        margin: 0 auto;
+    }
+}
 .wrapper__tickets {
     /* width: 280px; */
     margin: 0 auto;
