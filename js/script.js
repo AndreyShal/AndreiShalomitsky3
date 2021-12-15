@@ -84,6 +84,10 @@ var swiper1 = new Swiper('.swiper1', {
 })
 
 var swiper2 = new Swiper('.swiper2', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
     // Default parameters
     slidesPerView: 0,
     spaceBetween: 10,
@@ -101,8 +105,8 @@ var swiper2 = new Swiper('.swiper2', {
         },
         // when window width is >= 1378px
         1378: {
-            slidesPerView: 3,
-            spaceBetween: 90
+            slidesPerView: 4,
+            spaceBetween: 8
         },
     }
 })

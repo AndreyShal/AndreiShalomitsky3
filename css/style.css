@@ -596,8 +596,10 @@ span {
     .audience__container {
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
+        width: 460px;
+        margin: 0 auto;
     }
     .audience {
         position: relative;
@@ -659,10 +661,19 @@ span {
         width: 700px;
         margin: 0 auto;
     }
+    .audience__container {
+        justify-content: space-between;
+        width: 700px;
+        margin: 0 auto;
+    }
 }
 @media screen and (min-width: 1024px) {
     /*пока не заморачиваться.Сделать*/
     .about__conference {
+        width: 960px;
+        margin: 0 auto;
+    }
+    .audience__container {
         width: 960px;
         margin: 0 auto;
     }
@@ -1097,6 +1108,9 @@ span {
     margin: 0 auto;
     margin-top: 65px;
 }
+.program__text-fool {
+    display: none;
+}
 .program__title {
     margin-bottom: 32px;
 }
@@ -1153,17 +1167,32 @@ span {
     }
 }
 @media screen and (min-width: 1378px) {
+    .wrapper__program-and-tickets {
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        /* padding: 0 10px 0; */
+        /* width: 360px; */
+        /* background: url(../img/conferenceProgram/Rectangle\ 29.jpg); */
+        background: radial-gradient(100.4% 100.54% at 52.22% 53.81%, rgba(11, 11, 11, 0) 0%, #0b0b0b 100%),
+            url(../img/conferenceProgram/Rectangle\ 29.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+    }
     .wrapper__program {
         width: 100%;
         margin: 0 auto;
-        height: 1400px;
-        /* background: radial-gradient(35.4% 21.54% at 52.22% 53.81%, rgba(11, 11, 11, 0.5) 0%, #0b0b0b 100%),
-            url(../img/conferenceProgram/Rectangle\ 29.jpg); */
-        background-size: contain;
+        background: url();
+        background-size: cover;
     }
     .program__container {
         width: 1030px;
         margin: 0 auto;
+    }
+
+    .prgram__text-mobail {
+        display: none;
     }
 }
 .wrapper__tickets {
@@ -1180,7 +1209,9 @@ span {
 .tickets__text {
     margin-bottom: 40px;
 }
-
+.onlain__payment {
+    display: none;
+}
 .box__tickets {
     width: 208px;
     margin: 0 auto;
@@ -1222,6 +1253,65 @@ span {
         flex-wrap: wrap;
         justify-content: space-around;
         margin: 56px;
+    }
+}
+@media screen and (min-width: 1378px) {
+    .wrapper__tickets {
+        width: 1030px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .container__ticets {
+        width: 1030px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 56px;
+        margin: 0 auto;
+    }
+    .timetable__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    .igorKatamaranov {
+        background-image: url(../img/conferenceProgram/icons/igorKatmaranov1.jpg);
+    }
+    .tatianaVosmiglazova {
+        background-image: url(../img/conferenceProgram/icons/tatianaVosmiglazova.jpg);
+    }
+    .zinaKashina {
+        background-image: url(../img/conferenceProgram/icons/zinaKashina.jpg);
+    }
+    .timetable__icon {
+        width: 80px;
+        height: 90px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .timetable__text {
+        width: 597px;
+        height: auto;
+    }
+    .tickets__title h2 {
+        font-size: 48px;
+        line-height: 63px;
+    }
+    .onlain__payment {
+        display: block;
+    }
+    .timetable__title {
+        width: 650px;
+    }
+    .program__container .expend {
+        display: none;
+    }
+    .program__text-fool {
+        display: block;
+    }
+    .timetable__text h6 {
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 .photo-galery__wrapper {
@@ -1318,6 +1408,73 @@ span {
         margin-top: 150px;
     }
 }
+@media screen and (min-width: 1378px) {
+    .photo-galery__wrapper {
+        width: 1030px;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .photo-galery__wrapper h2 {
+        font-size: 48px;
+        line-height: 63px;
+    }
+    .photo-galery__wrapper .swiper-pagination {
+        display: block;
+    }
+    .photo-galery__wrapper .swiper-button-prev {
+        display: block;
+    }
+    .photo-galery__wrapper .swiper-button-next {
+        display: block;
+    }
+    .photo-galery__wrapper .item {
+        /* margin: 0 auto; */
+        width: 252px;
+        height: 600px;
+        position: relative;
+        border: 1px solid #ff00c6;
+        mix-blend-mode: normal;
+        box-sizing: border-box;
+        filter: drop-shadow(4px 4px 30px rgba(123, 0, 143, 0.76));
+        border-radius: 2px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        /* position: absolute; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+    }
+    .gallery__date {
+        position: relative;
+        width: 204px;
+        height: 127px;
+        /* height: 127px; */
+        /* top: 100px;
+        left: 5px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+        margin-right: 3%;
+    }
+    .gt1 {
+        background-image: url(../img/photoGallery/foto2017.jpg);
+    }
+    .gt2 {
+        background-image: url(../img/photoGallery/foto2018.jpg);
+    }
+    .gt3 {
+        background-image: url(../img/photoGallery/foto2019.jpg);
+    }
+    .gt4 {
+        background-image: url(../img/photoGallery/foto2020.jpg);
+    }
+    .swiper2 {
+        height: 605px;
+    }
+}
 .place__event {
     position: relative;
     /* width: 360px; */
@@ -1371,6 +1528,25 @@ span {
 @media screen and (min-width: 768px) {
     .place__event {
         width: 700px;
+        margin: 0 auto;
+    }
+    .place__title {
+        padding: 0 40px 0;
+    }
+    .place__text {
+        padding: 0 40px 0;
+    }
+    .place__point {
+        height: 526px;
+    }
+    .place__point {
+        bottom: -13px;
+        right: 327px;
+    }
+}
+@media screen and (min-width: 1378px) {
+    .place__event {
+        width: 1030px;
         margin: 0 auto;
     }
     .place__title {
