@@ -1419,13 +1419,25 @@ span {
         line-height: 63px;
     }
     .photo-galery__wrapper .swiper-pagination {
+        color: #efefef;
         display: block;
+        top: 650px;
     }
     .photo-galery__wrapper .swiper-button-prev {
         display: block;
+        width: 20px;
+        height: 40px;
+        top: 650px;
+        left: 260px;
+        color: #efefef;
     }
     .photo-galery__wrapper .swiper-button-next {
         display: block;
+        width: 20px;
+        height: 40px;
+        top: 650px;
+        right: 260px;
+        color: #efefef;
     }
     .photo-galery__wrapper .item {
         /* margin: 0 auto; */
@@ -1435,7 +1447,7 @@ span {
         border: 1px solid #ff00c6;
         mix-blend-mode: normal;
         box-sizing: border-box;
-        filter: drop-shadow(4px 4px 30px rgba(123, 0, 143, 0.76));
+        filter: drop-shadow(4px 4px 4px rgba(123, 0, 143, 0.76));
         border-radius: 2px;
         background-repeat: no-repeat;
         background-position: center center;
@@ -1472,7 +1484,7 @@ span {
         background-image: url(../img/photoGallery/foto2020.jpg);
     }
     .swiper2 {
-        height: 605px;
+        height: 818px;
     }
 }
 .place__event {
@@ -1550,17 +1562,29 @@ span {
         margin: 0 auto;
     }
     .place__title {
-        padding: 0 40px 0;
+        padding: 0;
+    }
+    .place__title h2 {
+        font-size: 48px;
+        line-height: 63px;
     }
     .place__text {
-        padding: 0 40px 0;
+        padding: 0;
     }
     .place__point {
         height: 526px;
     }
+    .place__map {
+        background: radial-gradient(50% 50% at center, rgba(11, 11, 11, 0.2) 100%, #0b0b0b 500%),
+            url(../img/place/map-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 793px;
+    }
     .place__point {
-        bottom: -13px;
-        right: 327px;
+        bottom: 122px;
+        right: 492px;
     }
 }
 .partners {

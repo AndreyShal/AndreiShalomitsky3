@@ -91,6 +91,10 @@ var swiper2 = new Swiper('.swiper2', {
     // Default parameters
     slidesPerView: 0,
     spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
     // Responsive breakpoints
     breakpoints: {
         // when window width is >= 360px
