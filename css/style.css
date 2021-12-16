@@ -296,29 +296,29 @@ span {
     background-size: cover;
     width: 100%;
     height: 228px;
-    padding-top: 61px;
+    padding-top: 41px;
     box-sizing: border-box;
-    width: 100%;
 }
 .main__design {
+    position: relative;
     margin: 0 auto;
     width: 280px;
     height: 95px;
+    background-image: url(../img/mainBanner/Design-1x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-.main__design img {
-    width: 100%;
-    /* height: 100%; */
-    object-fit: cover;
-    -o-object-fit: cover;
-}
+
 .main__conference {
+    position: absolute;
     width: 186px;
     height: 23px;
-    margin-top: -30px;
-}
-.main__conference img {
-    width: 100%;
-    height: 100%;
+    background-image: url(../img/mainBanner/conference-1x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-top: 70px;
 }
 .container__main {
     display: flex;
@@ -340,22 +340,21 @@ span {
         margin: 0 auto;
     }
     .main__design {
-        width: 100%;
-        height: 254px;
+        width: 480px;
+        height: 154px;
         margin: 0 auto;
-        /* position: relative; */
+        position: relative;
+        background-image: url(../img/mainBanner/Design-2x.png);
     }
     .main__conference {
-        /* position: absolute; */
-        width: 481px;
-        height: 53px;
-        margin-top: -80px;
-        /* padding-left: -50px; */
+        position: absolute;
+        width: 290px;
+        height: 43px;
+        margin-top: 110px;
     }
     .main__text {
         width: 100%;
-        /* height: 24px; */
-        margin-top: -24px;
+        margin-top: 24px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -364,18 +363,23 @@ span {
         margin: 0 auto;
     }
     .main__design {
-        width: 688px;
-        height: 254px;
+        margin: 0 auto;
+        position: relative;
+        width: 650px;
+        height: 204px;
+        background-image: url(../img/mainBanner/Design-3x.png);
     }
     .main__conference {
+        position: absolute;
         width: 457px;
         height: 53px;
-        margin-top: -70px;
+        background-image: url(../img/mainBanner/conference-3x.png);
+        margin-top: 150px;
     }
     .main__text {
         width: 688px;
         /* height: 24px; */
-        margin-top: -29px;
+        margin-top: 29px;
     }
     .main__text h2 {
         text-align: left;
@@ -387,14 +391,16 @@ span {
     }
     .main__design {
         margin-top: 72px;
-        width: 1030px;
-        height: 380px;
+        width: 900px;
+        height: 300px;
         position: relative;
+        background-image: url(../img/mainBanner/Design-4x.png);
     }
     .main__conference {
-        width: 684px;
+        position: absolute;
+        width: 584px;
         height: 79px;
-        margin-top: -90px;
+        margin-top: 210px;
     }
     .main__text {
         width: 100%;
