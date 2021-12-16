@@ -801,7 +801,7 @@ span {
     width: 100%;
     height: 459px;
     background: radial-gradient(99.06% 99.88% at 50% 50%, rgba(11, 11, 11, 0) 0%, #0b0b0b 100%),
-        url(../img/format/formatConference.png);
+        url(../img/format/formatConference1.jpg);
     /* background-image: url(../img/format/formatConference.png); */
     background-repeat: no-repeat;
     background-position: center;
@@ -843,6 +843,10 @@ span {
     }
 }
 @media screen and (max-width: 500px) {
+    .format__conference {
+        background: radial-gradient(77.49% 37.87% at right, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
+            url(../img/format/formatConference2.jpg) no-repeat;
+    }
 }
 @media screen and (min-width: 1378px) {
     .format__wrapper {
@@ -856,7 +860,7 @@ span {
         width: 100%;
         height: 800px;
         background: radial-gradient(77.49% 37.87% at right, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
-            url(../img/format/formatConference.png) no-repeat;
+            url(../img/format/formatConference4.jpg) no-repeat;
         background-size: cover;
         margin: 0 auto;
     }
@@ -1333,39 +1337,37 @@ span {
     padding: 0 40px 0;
 }
 .photo-galery__wrapper .item {
-    /* margin: 0 auto; */
-    width: 320px;
-    height: 380px;
+    width: 252px;
+    height: 320px;
+    margin: 20px;
     position: relative;
-    /* margin: 0 auto; */
-    /* mix-blend-mode: normal; */
-    /* filter: drop-shadow(4px 4px 30px rgba(123, 0, 143, 0.76)); */
-    /* border-radius: 2px; */
+    border: 1px solid #ff00c6;
+    filter: drop-shadow(4px 4px 16px rgba(123, 0, 143, 0.76));
+    border-radius: 2px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    /* position: absolute; */
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 0;
 }
 .gt1 {
-    background-image: url(../img/photoGallery/Rectangle\ 33.png);
+    background-image: url(../img/photoGallery/foto2017-1x.jpg);
 }
 .gt2 {
-    background-image: url(../img/photoGallery/Rectangle\ 34.png);
+    background-image: url(../img/photoGallery/foto2018-1x.jpg);
 }
 .gt3 {
-    background-image: url(../img/photoGallery/Rectangle\ 35.png);
+    background-image: url(../img/photoGallery/foto2019-1x.jpg);
 }
 .gt4 {
-    background-image: url(../img/photoGallery/Rectangle\ 36.png);
+    background-image: url(../img/photoGallery/foto2020-1x.jpg);
 }
 .gallery__date {
     position: relative;
-    width: 190px;
-    height: auto;
+    width: 204px;
+    height: 127px;
     /* height: 127px; */
     /* top: 100px;
     left: 5px; */
@@ -1398,6 +1400,9 @@ span {
 }
 .photo-galery__wrapper .swiper-button-next {
     display: none;
+}
+.swiper2 {
+    height: 370px;
 }
 @media screen and (min-width: 500px) {
     .photo-galery__wrapper {

@@ -99,8 +99,8 @@ var swiper2 = new Swiper('.swiper2', {
     breakpoints: {
         // when window width is >= 360px
         360: {
-            slidesPerView: 1.5,
-            spaceBetween: 50
+            slidesPerView: 1.2,
+            spaceBetween: 0,
         },
         // when window width is >= 768px
         768: {
