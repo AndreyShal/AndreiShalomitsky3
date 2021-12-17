@@ -840,13 +840,9 @@ span {
         z-index: -1;
     }
     .format__conference {
-        width: 480px;
+        width: 460px;
         margin: 0 auto;
         padding: 0 40px 0;
-    }
-    .format__container {
-        display: flex;
-        justify-content: space-between;
     }
     .format__title {
         width: 100%;
@@ -857,7 +853,6 @@ span {
     .format__blok h3 {
         width: auto;
         height: auto;
-        margin: 0 20px 0;
     }
     .format__blok span {
         width: auto;
@@ -866,26 +861,58 @@ span {
     }
 }
 @media screen and (min-width: 768px) {
+    .format-wrapper-fon {
+        position: absolute;
+        width: 100%;
+        height: 659px;
+        background: radial-gradient(99.06% 99.88% at 50% 50%, rgba(11, 11, 11, 0.8) 0%, #0b0b0b 100%),
+            url(../img/format/formatConference-3x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+    }
+    .format__conference {
+        width: 700px;
+        margin: 0 auto;
+        padding: 0 40px 0;
+    }
+    .format__container {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 @media screen and (min-width: 1378px) {
     .format__wrapper {
         width: 100%;
         margin: 0 auto;
         margin-top: 95px;
-
-        /* margin-bottom: -100px; */
+        margin-bottom: 500px;
+    }
+    .format-wrapper-fon {
+        position: absolute;
+        width: 100%;
+        height: 819px;
+        background: radial-gradient(99.06% 99.88% at 50% 50%, rgba(11, 11, 11, 0.8) 0%, #0b0b0b 100%),
+            url(../img/format/formatConference-3x.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
     }
     .format__conference {
-        width: 100%;
-        height: 800px;
-        background: radial-gradient(77.49% 37.87% at right, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
-            url(../img/format/formatConference4.jpg) no-repeat;
-        background-size: cover;
+        width: 1030px;
         margin: 0 auto;
+        padding: 0;
     }
     .format__title {
         margin: 0 auto;
         width: 1030px;
+        margin-bottom: 20px;
+    }
+    .format__title h2 {
+        font-size: 48px;
+        line-height: 63px;
     }
     .format__text {
         height: auto;
@@ -1019,6 +1046,7 @@ span {
         line-height: 32px;
     }
     .swiper1 {
+        display: block;
         height: 550px;
     }
     .swiper1 .swiper-pagination {
@@ -1542,13 +1570,13 @@ span {
     .photo-galery__wrapper .swiper-pagination {
         color: #efefef;
         display: block;
-        top: 650px;
+        top: 670px;
     }
     .photo-galery__wrapper .swiper-button-prev {
         display: block;
         width: 20px;
         height: 40px;
-        top: 650px;
+        top: 670px;
         left: 260px;
         color: #efefef;
     }
@@ -1556,7 +1584,7 @@ span {
         display: block;
         width: 20px;
         height: 40px;
-        top: 650px;
+        top: 670px;
         right: 260px;
         color: #efefef;
     }
