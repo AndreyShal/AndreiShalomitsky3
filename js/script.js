@@ -115,4 +115,27 @@ var swiper2 = new Swiper('.swiper2', {
     }
 })
 /* ..........................................SWIPER СЛАЙДЕР КОНЕЦ........................ */
-// .....................................................................
+
+/* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ НАЧАЛО......................*/
+
+document.getElementById("expend1").addEventListener('click', toggleMe);
+toggleMe()
+function toggleMe() {
+    let x = document.getElementById("about__txt__desctop1");
+    let y = document.getElementById("about__txt1");
+
+    if (!x && !y) return true;
+
+    if (x.style.display == "none" && y.style.display == "block") {
+        x.style.display = "block";
+        y.style.display = "none";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+
+    return true;
+}
+
+/* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ КОНЕЦ......................*/
+

@@ -603,6 +603,10 @@ span {
         font-size: 24px;
         line-height: 150%;
     }
+    .about__txt__desctop {
+        font-size: 24px;
+        line-height: 150%;
+    }
     .audience__container {
         display: flex;
         align-items: flex-end;
@@ -676,6 +680,10 @@ span {
         width: 700px;
         margin: 0 auto;
     }
+    .about__txt__desctop {
+        font-size: 24px;
+        line-height: 150%;
+    }
 }
 @media screen and (min-width: 1024px) {
     /*пока не заморачиваться.Сделать*/
@@ -686,6 +694,10 @@ span {
     .audience__container {
         width: 960px;
         margin: 0 auto;
+    }
+    .about__txt__desctop {
+        font-size: 24px;
+        line-height: 150%;
     }
 }
 @media screen and (min-width: 1378px) {
@@ -698,6 +710,9 @@ span {
         line-height: 63px;
     }
     .about__txt {
+        display: none;
+    }
+    .expend {
         display: none;
     }
     .about__txt__desctop {
