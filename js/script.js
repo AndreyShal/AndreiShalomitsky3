@@ -136,6 +136,24 @@ function toggleMe() {
 
     return true;
 }
+document.getElementById("expend2").addEventListener('click', toggleMe2);
+toggleMe2()
+function toggleMe2() {
+    let x = document.getElementById("program__text-fool1");
+    let y = document.getElementById("prgram__text-mobail1");
+
+    if (!x && !y) return true;
+
+    if (x.style.display == "none" && y.style.display == "block") {
+        x.style.display = "block";
+        y.style.display = "none";
+    } else {
+        x.style.display = "none";
+        y.style.display = "block";
+    }
+
+    return true;
+}
 
 /* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ КОНЕЦ......................*/
 

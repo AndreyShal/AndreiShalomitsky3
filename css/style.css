@@ -478,8 +478,8 @@ span {
 .about__conference {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .about__txt {
     margin-top: 32px;
@@ -547,11 +547,11 @@ span {
 .audience__designers {
     margin-top: 32px;
     margin-bottom: 100px;
-    background-image: url("../img/about/Rectangle\ 5\ 1.jpg");
+    background-image: url("../img/about/desctop/designes.jpg");
 }
 .audience__professionals {
     margin-bottom: 60px;
-    background-image: url("../img/about/Rectangle\ 6\ 1.jpg");
+    background-image: url("../img/about/desctop/professionals.jpg");
 }
 .audience__professionals:after {
     top: -20px;
@@ -563,11 +563,12 @@ span {
 }
 .audience__newbies {
     margin-bottom: 110px;
-    background-image: url("../img/about/Rectangle\ 7\ 1.jpg");
+    background-image: url("../img/about/desctop/beginners.jpg");
 }
 .audience__suppliers {
-    background-image: url("../img/about/Rectangle\ 8\ 1.jpg");
+    background-image: url("../img/about/desctop/suppliers.jpg");
 }
+
 .become__partner {
     width: 238px;
     height: 44px;
@@ -587,6 +588,7 @@ span {
     .about__conference {
         width: 460px;
         margin: 0 auto;
+        padding: 0;
     }
     .about__title h2 {
         text-align: left;
@@ -599,11 +601,16 @@ span {
         font-size: 18px;
         line-height: 22px;
     }
+    .about__txt {
+    }
+    .about__txt__desctop {
+        margin-top: -41px;
+    }
     .about__txt span {
         font-size: 24px;
         line-height: 150%;
     }
-    .about__txt__desctop {
+    .about__txt__desctop span {
         font-size: 24px;
         line-height: 150%;
     }
@@ -695,7 +702,7 @@ span {
         width: 960px;
         margin: 0 auto;
     }
-    .about__txt__desctop {
+    .about__txt__desctop span {
         font-size: 24px;
         line-height: 150%;
     }
@@ -776,6 +783,18 @@ span {
         margin-left: 210px;
         margin-top: -40px;
     }
+    .audience__designers:hover {
+        background-image: url("../img/about/desctop/designes-color.jpg");
+    }
+    .audience__professionals:hover {
+        background-image: url("../img/about/desctop/professionals-color.jpg");
+    }
+    .audience__newbies:hover {
+        background-image: url("../img/about/desctop/beginners-color.jpg");
+    }
+    .audience__suppliers:hover {
+        background-image: url("../img/about/desctop/suppliers-color.jpg");
+    }
     .audience__text-wrapper {
         width: 357px;
         height: 202px;
@@ -815,9 +834,9 @@ span {
     z-index: -1;
 }
 .format__conference {
-    margin-top: 66px;
     padding: 0 40px 0;
     margin: 0 auto;
+    margin-top: 66px;
 }
 .format__title {
     width: 100%;
@@ -842,6 +861,7 @@ span {
         position: relative;
         margin: 0 auto;
         margin-top: 95px;
+        padding: 0;
     }
     .format-wrapper-fon {
         position: absolute;
@@ -857,7 +877,7 @@ span {
     .format__conference {
         width: 460px;
         margin: 0 auto;
-        padding: 0 40px 0;
+        padding: 0;
     }
     .format__title {
         width: 100%;
@@ -952,7 +972,6 @@ span {
 }
 .speakers {
     margin: 0 auto;
-    /* width: 280px; */
     padding: 64px 0 0;
 }
 .speacers__title {
@@ -961,6 +980,9 @@ span {
 .speacers__text {
     margin-top: 32px;
     padding: 0 40px 0;
+}
+.speacers-text__desctop {
+    display: none;
 }
 .speacers__container {
     margin: 0 auto;
@@ -984,11 +1006,30 @@ span {
     left: 18px;
     bottom: 71px;
     border-radius: 2px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
-.rectangle32__foto img {
+
+.tatianaVosmiglazova32 {
+    background-image: url("../img/spaekers/desctop/tatianaVosmiglazova.jpg");
+}
+.igorKatamaranov32 {
+    background-image: url("../img/spaekers/desctop/igorKatamaranov.jpg");
+}
+.richardSapogov32 {
+    background-image: url("../img/spaekers/desctop/richardSapogov.jpg");
+}
+.zinaKashina32 {
+    background-image: url("../img/spaekers/desctop/zinaKashina.jpg");
+}
+
+/* .rectangle32__foto img {
     width: 100%;
     height: 100%;
-}
+} */
 .rectangle32__title {
     position: relative;
     width: 202px;
@@ -1003,7 +1044,22 @@ span {
 .swiper1 {
     display: none;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 500px) {
+    .speakers {
+        width: 460px;
+        padding: 0;
+        margin-top: 70px;
+    }
+    .speacers__title {
+        padding: 0;
+    }
+    .speacers__text {
+        padding: 0;
+    }
+    .speacers__text span {
+        font-size: 24px;
+        line-height: 150%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -1064,8 +1120,8 @@ span {
         display: block;
         height: 550px;
     }
-    .swiper1 .swiper-pagination {
-        color: #efefef;
+    .swiper1 .swiper-pagination span {
+        background: #efefef;
     }
     .swiper1 .swiper-button-prev {
         top: 95%;
@@ -1089,6 +1145,9 @@ span {
     }
     .speacers__mobail {
         display: none;
+    }
+    .speacers-text__desctop {
+        display: block;
     }
     .speacers__container {
         display: flex;
@@ -1144,6 +1203,18 @@ span {
         font-size: 18px;
         line-height: 24px;
     }
+    .tatianaVosmiglazova32:hover {
+        background-image: url("../img/spaekers/desctop/tatianaVosmiglazova-color.jpg");
+    }
+    .igorKatamaranov32:hover {
+        background-image: url("../img/spaekers/desctop/igorKatamaranov-color.jpg");
+    }
+    .richardSapogov32:hover {
+        background-image: url("../img/spaekers/desctop/richardSapogov-color.jpg");
+    }
+    .zinaKashina32:hover {
+        background-image: url("../img/spaekers/desctop/zinaKashina-color.jpg");
+    }
     .swiper1 {
         height: 550px;
         margin-top: 50px;
@@ -1186,7 +1257,7 @@ span {
 }
 .comference__program {
     /* width: 280px; */
-    /* padding: 0 40px 0; */
+    padding: 0 40px 0;
     margin: 0 auto;
     margin-top: 65px;
 }
@@ -1199,7 +1270,7 @@ span {
 .timetable__title {
     display: flex;
     justify-content: space-around;
-    /* width: 210px; */
+    padding: 0 40px 0;
     margin: 0 auto;
     margin-top: 32px;
 }
@@ -1210,7 +1281,7 @@ span {
 }
 .timetable__wrapper {
     width: 100%;
-    /* padding: 0 40px 0; */
+    padding: 0 40px 0;
     height: auto;
     margin: 0 auto;
 }
@@ -1247,6 +1318,16 @@ span {
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
+    }
+    .comference__program {
+        padding: 0;
+    }
+    .comference__program span {
+        font-size: 24px;
+        line-height: 150%;
+    }
+    .timetable__wrapper {
+        padding: 0;
     }
 }
 @media screen and (min-width: 768px) {
@@ -1307,6 +1388,9 @@ span {
     .prgram__text-mobail {
         display: none;
     }
+    .program__text-fool {
+        display: block;
+    }
 }
 .wrapper__tickets {
     /* width: 280px; */
@@ -1317,9 +1401,11 @@ span {
     margin-top: 66px;
 }
 .tickets__title {
+    padding: 0 40px 0;
     margin-bottom: 32px;
 }
 .tickets__text {
+    padding: 0 40px 0;
     margin-bottom: 40px;
 }
 .onlain__payment {
@@ -1356,6 +1442,15 @@ span {
     }
     .wrapper__tickets {
         margin-top: 100px;
+        padding: 0;
+    }
+    .tickets__text,
+    .tickets__title {
+        padding: 0;
+    }
+    .tickets__text span {
+        font-size: 24px;
+        line-height: 150%;
     }
 }
 @media screen and (min-width: 768px) {
@@ -1583,9 +1678,12 @@ span {
         line-height: 63px;
     }
     .photo-galery__wrapper .swiper-pagination {
-        color: #efefef;
+        /* color: #efefef; */
         display: block;
         top: 670px;
+    }
+    .photo-galery__wrapper .swiper-pagination span {
+        background: #efefef;
     }
     .photo-galery__wrapper .swiper-button-prev {
         display: block;
@@ -1656,10 +1754,11 @@ span {
     /* width: 360px; */
     margin: 0 auto;
     margin-top: 50px;
+    padding: 0 40px 0;
 }
 .place__title {
     /* width: 287px; */
-    padding: 0 26px 0;
+    /* padding: 0 26px 0; */
     margin: 0 auto;
     position: relative;
 }
@@ -1676,14 +1775,20 @@ span {
     /* width: 295px; */
     margin: 0 auto;
     position: relative;
-    padding: 0 26px 0;
+    /* padding: 0 26px 0; */
+}
+.place__point-relative {
+    position: relative;
+    margin: 0 auto;
+    width: 1px;
+    height: 1px;
 }
 .place__point {
     position: absolute;
     width: 50px;
     height: 67.38px;
-    bottom: 220px;
-    right: 215px;
+    top: 198px;
+    left: -25px;
     background-image: url(../img/place/Vector.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -1720,9 +1825,7 @@ span {
         background-image: url(../img/place/map-3x.jpg);
     }
     .place__point {
-        height: 526px;
-    }
-    .place__point {
+        height: 111px;
         bottom: -13px;
         right: 327px;
     }
@@ -1743,7 +1846,11 @@ span {
         padding: 0;
     }
     .place__point {
-        height: 526px;
+        height: 70px;
+        bottom: 122px;
+        right: 492px;
+        left: 10px;
+        top: 350px;
     }
     .place__map {
         background: radial-gradient(50% 50% at center, rgba(11, 11, 11, 0.2) 100%, #0b0b0b 500%),
@@ -1752,10 +1859,6 @@ span {
         background-repeat: no-repeat;
         width: 100%;
         height: 793px;
-    }
-    .place__point {
-        bottom: 122px;
-        right: 492px;
     }
 }
 .partners {
