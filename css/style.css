@@ -1025,6 +1025,9 @@ span {
 .zinaKashina32 {
     background-image: url("../img/spaekers/desctop/zinaKashina.jpg");
 }
+.rectangle32-text {
+    display: none;
+}
 
 /* .rectangle32__foto img {
     width: 100%;
@@ -1152,6 +1155,8 @@ span {
     .speacers__container {
         display: flex;
         justify-content: space-around;
+        margin-left: 25px;
+        margin-right: 25px;
     }
     .speacers__title {
         padding: 0;
@@ -1168,6 +1173,7 @@ span {
         padding: 0;
     }
     .rectangle32 {
+        position: relative;
         width: 252px;
         height: 276px;
         background: #0b0b0b;
@@ -1183,13 +1189,32 @@ span {
         bottom: 81px;
         border-radius: 2px;
     }
+    .speacers__container:hover {
+        transform: scale(1.2);
+        transition: transform 0.2s ease;
+    }
     .rectangle32__title {
         margin: 0 auto;
         left: 2px;
-        /* padding: 0 0px 0px; */
-        /* margin: 0 auto; */
         bottom: 55px;
-        /* text-align: center; */
+    }
+    .rectangle32__wrapper:hover {
+        opacity: 1;
+    }
+    .rectangle32__wrapper {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 103px;
+        background: rgba(0, 0, 0, 0.4);
+        opacity: 0;
+    }
+    .rectangle32-text {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
     }
     .speacers__name {
         width: 202px;
@@ -1523,6 +1548,12 @@ span {
     .timetable__text h6 {
         font-size: 14px;
         line-height: 17px;
+    }
+    .become__partner:hover {
+        box-shadow: 0px 0px 0px rgba(123, 0, 143, 0.76);
+    }
+    .become__partner h4:active {
+        color: #ff00c6;
     }
 }
 .photo-galery__wrapper {
