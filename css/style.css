@@ -458,7 +458,7 @@ span {
         top: 0;
         right: 0;
     }
-    .hdr-dest__right .become__partner {
+    .hdr-dest__right .button {
         margin-top: 20px;
         margin-right: 30px;
     }
@@ -531,6 +531,9 @@ span {
     box-shadow: 4px 4px 30px rgb(123 0 143 / 76%);
     border-radius: 2px;
 }
+.audience__container {
+    margin-bottom: 60px;
+}
 .audience__text-wrapper {
     color: #efefef;
     background: rgba(11, 11, 11, 0.7);
@@ -569,21 +572,6 @@ span {
     background-image: url("../img/about/desctop/suppliers.jpg");
 }
 
-.become__partner {
-    width: 238px;
-    height: 44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    margin-top: 64px;
-    background-color: #0b0b0b;
-    color: #efefef;
-    border: 1px solid #ff00c6;
-    box-sizing: border-box;
-    box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
-    border-radius: 2px;
-}
 @media screen and (min-width: 500px) {
     .about__conference {
         width: 460px;
@@ -668,14 +656,6 @@ span {
     .audience__newbies {
         margin-bottom: 110px;
     }
-    .become__partner {
-        margin-top: 11px;
-        width: 238px;
-    }
-    .become__partner h4 {
-        font-size: 24px;
-        line-height: 32px;
-    }
 }
 @media screen and (min-width: 768px) {
     .about__conference {
@@ -730,6 +710,7 @@ span {
     .audience__container {
         width: 1020px;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
     .audience__block {
         flex-direction: column;
@@ -1042,13 +1023,29 @@ span {
 }
 .bottom__speakers {
     margin-top: 70px;
-    width: 201px;
+    width: auto;
 }
 .swiper1 {
     display: none;
 }
 .zinakashina__button {
     display: none;
+}
+.button__wrapper {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    width: auto;
+    padding: 5px 15px 5px;
+    background: #0b0b0b;
+    border: 1px solid #ff00c6;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 30px rgba(123, 0, 143, 0.76);
+    border-radius: 2px;
+}
+.speacers__mobail {
+    margin-bottom: 100px;
 }
 @media only screen and (min-width: 500px) {
     .speakers {
@@ -1327,6 +1324,9 @@ span {
     height: auto;
     margin-top: 32px;
 }
+.program__container .button {
+    margin-top: 80px;
+}
 .timetable__time {
     /* width: 280px; */
     height: auto;
@@ -1338,6 +1338,10 @@ span {
 }
 .timetable__text {
     font-size: 14px;
+}
+.box__tickets .button h4 {
+    font-size: 24px;
+    line-height: 32px;
 }
 .bottom__timetable {
     width: 283px;
@@ -1474,6 +1478,7 @@ span {
 .become__partner h4 {
     background-color: #0b0b0b;
 }
+
 @media screen and (min-width: 500px) {
     .wrapper__tickets {
         width: 460px;
@@ -1563,10 +1568,10 @@ span {
         font-size: 14px;
         line-height: 17px;
     }
-    .become__partner:hover {
+    .button:hover {
         box-shadow: 0px 0px 0px rgba(123, 0, 143, 0.76);
     }
-    .become__partner h4:active {
+    .button h4:active {
         color: #ff00c6;
     }
 }

@@ -169,9 +169,11 @@ function toggleMe2() {
 
     return true;
 }
+
 document.getElementById("show__all").addEventListener('click', toggleMe3);
 toggleMe3()
 function toggleMe3() {
+    const btn = document.querySelector('#show__all > h4');
 
     let x = document.getElementById("zinakashina__button");
 
@@ -179,12 +181,15 @@ function toggleMe3() {
 
     if (x.style.display == "none") {
         x.style.display = "block";
+        btn.innerHTML = 'Скрыть обратно';
     } else {
         x.style.display = "none";
+        btn.innerHTML = 'Показать всех';
     }
 
     return true;
 }
+
 
 /* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ КОНЕЦ......................*/
 
