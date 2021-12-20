@@ -1047,6 +1047,9 @@ span {
 .swiper1 {
     display: none;
 }
+.zinakashina__button {
+    display: none;
+}
 @media only screen and (min-width: 500px) {
     .speakers {
         width: 460px;
@@ -1075,6 +1078,7 @@ span {
     }
     .speakers {
         margin: 0 auto;
+        margin-top: 100px;
         width: 100%;
     }
     .speacers__title {
@@ -1135,6 +1139,9 @@ span {
         top: 95%;
         right: 20vw;
         color: #efefef;
+    }
+    #show__all {
+        display: none;
     }
     /* ///////////////////////////////////// */
 }
@@ -1256,6 +1263,9 @@ span {
         top: 95%;
         right: 15vw;
         color: #efefef;
+    }
+    #show__all {
+        display: none;
     }
 }
 .wrapper__program-and-tickets {
@@ -1460,6 +1470,9 @@ span {
 .bottom__tickets {
     margin: 0 auto;
     width: 196px;
+}
+.become__partner h4 {
+    background-color: #0b0b0b;
 }
 @media screen and (min-width: 500px) {
     .wrapper__tickets {
@@ -2194,6 +2207,10 @@ span {
     }
 }
 @media screen and (min-width: 768px) {
+    .footer {
+        width: 680px;
+        padding: 0;
+    }
     .footer__line {
         width: 327px;
     }
@@ -2230,6 +2247,9 @@ span {
     .dateConf {
         display: block;
     }
+    .policy__personal-information {
+        margin-left: 82px;
+    }
 }
 @media screen and (min-width: 1378px) {
     .footer {
@@ -2237,7 +2257,7 @@ span {
     }
     .footer-desctop {
         display: block;
-        width: 1376px;
+        width: 1300px;
         margin: 0 auto;
         margin-top: 83px;
     }

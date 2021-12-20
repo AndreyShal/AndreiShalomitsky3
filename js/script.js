@@ -121,17 +121,25 @@ var swiper2 = new Swiper('.swiper2', {
 document.getElementById("expend1").addEventListener('click', toggleMe);
 toggleMe()
 function toggleMe() {
+    let newHTML1 = '<div id="expend1" class="expend"><a href="#"> \
+    Свернуть >>> </a></div>';
+    let newHTML2 = '<div id="expend1" class="expend"><a href="#"> \
+    Развернуть >>> </a></div>';
     let x = document.getElementById("about__txt__desctop1");
     let y = document.getElementById("about__txt1");
+    let z = document.getElementById("expend1");
 
     if (!x && !y) return true;
 
     if (x.style.display == "none" && y.style.display == "block") {
         x.style.display = "block";
         y.style.display = "none";
+        z.innerHTML = newHTML1;
+
     } else {
         x.style.display = "none";
         y.style.display = "block";
+        z.innerHTML = newHTML2;
     }
 
     return true;
@@ -139,17 +147,40 @@ function toggleMe() {
 document.getElementById("expend2").addEventListener('click', toggleMe2);
 toggleMe2()
 function toggleMe2() {
+    let newHTML1 = '<div id="expend2" class="expend"><a href="#"> \
+    Свернуть >>> </a></div>';
+    let newHTML2 = '<div id="expend2" class="expend"><a href="#"> \
+    Развернуть >>> </a></div>';
     let x = document.getElementById("program__text-fool1");
     let y = document.getElementById("prgram__text-mobail1");
+    let z = document.getElementById("expend2");
 
     if (!x && !y) return true;
 
     if (x.style.display == "none" && y.style.display == "block") {
         x.style.display = "block";
         y.style.display = "none";
+        z.innerHTML = newHTML1;
     } else {
         x.style.display = "none";
         y.style.display = "block";
+        z.innerHTML = newHTML2;
+    }
+
+    return true;
+}
+document.getElementById("show__all").addEventListener('click', toggleMe3);
+toggleMe3()
+function toggleMe3() {
+
+    let x = document.getElementById("zinakashina__button");
+
+    if (!x) return true;
+
+    if (x.style.display == "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
     }
 
     return true;
