@@ -1262,14 +1262,15 @@ span {
     position: relative;
 }
 .wrapper__program-fon {
+    top: 80px;
     position: absolute;
-    width: 100%;
+    width: 150%;
     height: 700px;
     background: radial-gradient(100% 100% at 52.22% 53.81%, rgba(11, 11, 11, 0.7) 0%, #0b0b0b 100%),
-        url(../img/conferenceProgram/formatConference-1x.jpg);
+        url(../img/conferenceProgram/programConference-1x.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     margin: 0 auto;
 }
 .wrapper__program {
