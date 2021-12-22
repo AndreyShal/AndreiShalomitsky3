@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*Обнуление*/
-/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700,900); */
 * {
     padding: 0;
     margin: 0;
@@ -177,13 +175,6 @@ span {
     height: auto;
     margin: 0 auto;
 }
-/* ..........................................СЛАЙДЕР SWIPER НАЧАЛО........................ */
-.swiper {
-    /* width: 280px; */
-    /* height: 280px; */
-}
-/* ..........................................СЛАЙДЕР SWIPER КОНЕЦ........................ */
-
 @media screen and (min-width: 500px) {
     .wrapper {
         width: 100%;
@@ -208,7 +199,6 @@ span {
     margin: 0 auto;
     width: 360px;
     position: fixed;
-    /* width: 100%; */
     height: 45px;
     display: flex;
     background: linear-gradient(180deg, #0b0b0b 43.92%, rgba(11, 11, 11, 0.5) 100%);
@@ -223,12 +213,9 @@ span {
 }
 .menu ul {
     margin: 0;
-    /* list-style: none; */
     padding-left: 19px;
-    /* display: none; */
 }
 .menu .title {
-    /* font-size: 18px; */
     cursor: pointer;
 }
 .menu .title::before {
@@ -251,14 +238,12 @@ span {
 .menu .menu__absolute {
     background-color: #0b0b0b;
     display: none;
-    /* list-style: none; */
     position: absolute;
     width: 440px;
     height: 100vh;
     top: 43px;
     left: 8px;
     background-image: url(../img/header/menuFon2.jpg);
-    /* z-index: 1; */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -290,7 +275,6 @@ span {
 .main__banner {
     background: radial-gradient(77.49% 37.87% at top, rgba(11, 11, 11, 0) 52.6%, #0b0b0b 300%),
         url(../img/mainBanner/Rectangle\ 1.jpg) no-repeat;
-    /* background-image: url(../img/mainBanner/Rectangle\ 1.jpg); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -378,7 +362,6 @@ span {
     }
     .main__text {
         width: 688px;
-        /* height: 24px; */
         margin-top: 29px;
     }
     .main__text h2 {
@@ -458,8 +441,6 @@ span {
         top: 0;
         right: 0;
     }
-    .hdr-dest__right .group2:hover {
-    }
     .hdr-dest__right .group2 h6:hover {
         text-shadow: 1px 0px 1px #ff00c6, 0 1px 1px #ff00c6, -1px 0 1px #ff00c6, 0 -1px 1px #ff00c6;
     }
@@ -498,7 +479,6 @@ span {
 .about__title h2 {
     font-size: 35px;
 }
-
 .expend {
     margin-top: 32px;
 }
@@ -544,13 +524,7 @@ span {
     background: rgba(11, 11, 11, 0.7);
 }
 .audience__title {
-    /* font-size: 24px;
-    line-height: 32px; */
     margin-bottom: 16px;
-}
-.audience__description {
-    /* font-size: 18px;
-    line-height: 22px; */
 }
 .audience__designers {
     margin-top: 32px;
@@ -593,8 +567,6 @@ span {
     span {
         font-size: 18px;
         line-height: 22px;
-    }
-    .about__txt {
     }
     .about__txt__desctop {
         margin-top: -41px;
@@ -835,7 +807,6 @@ span {
     color: #efefef;
     width: 100%;
 }
-
 .format__text span {
     margin: 0 auto;
     width: 100%;
@@ -998,7 +969,6 @@ span {
     background-position: center center;
     background-size: contain;
 }
-
 .tatianaVosmiglazova32 {
     background-image: url("../img/spaekers/desctop/tatianaVosmiglazova.jpg");
 }
@@ -1014,11 +984,6 @@ span {
 .rectangle32-text {
     display: none;
 }
-
-/* .rectangle32__foto img {
-    width: 100%;
-    height: 100%;
-} */
 .rectangle32__title {
     position: relative;
     width: 202px;
@@ -1110,10 +1075,7 @@ span {
     .rectangle32__title {
         margin: 0 auto;
         left: -18px;
-        /* padding: 0 0px 0px; */
-        /* margin: 0 auto; */
         bottom: 55px;
-        /* text-align: center; */
     }
     .speacers__name {
         width: 280px;
@@ -1290,11 +1252,8 @@ span {
     box-sizing: border-box;
     width: 100%;
     padding: 0 10px 0;
-    /* width: 360px; */
-    /* background: url(../img/conferenceProgram/formatConference-1x.jpg); */
 }
 .comference__program {
-    /* width: 280px; */
     padding: 0 40px 0;
     margin: 0 auto;
     margin-top: 65px;
@@ -1312,8 +1271,6 @@ span {
     margin: 0 auto;
     margin-top: 32px;
 }
-.timetable__item {
-}
 .reassign__timetable {
     opacity: 0.2;
 }
@@ -1325,7 +1282,6 @@ span {
 }
 .timetable__container {
     width: 100%;
-    /* padding: 0 40px 0; */
     height: auto;
     margin-top: 32px;
 }
@@ -1333,15 +1289,11 @@ span {
     margin-top: 80px;
 }
 .timetable__time {
-    /* width: 280px; */
     height: auto;
 }
 .timetable__text {
     width: 100%;
-    /* padding: 0 40px 0; */
     height: auto;
-}
-.timetable__text {
     font-size: 14px;
 }
 .box__tickets .button h4 {
@@ -1407,9 +1359,6 @@ span {
         position: relative;
         box-sizing: border-box;
         width: 100%;
-        /* padding: 0 10px 0; */
-        /* width: 360px; */
-        /* background: url(../img/conferenceProgram/Rectangle\ 29.jpg); */
         background: radial-gradient(100.4% 100.54% at 52.22% 53.81%, rgba(11, 11, 11, 0) 0%, #0b0b0b 100%),
             url(../img/conferenceProgram/Rectangle\ 29.jpg);
         background-repeat: no-repeat;
@@ -1438,7 +1387,6 @@ span {
     }
 }
 .wrapper__tickets {
-    /* width: 280px; */
     margin: 0 auto;
     box-sizing: border-box;
     width: 100%;
@@ -1600,8 +1548,6 @@ span {
     margin: 0 auto;
     margin-top: 68px;
     overflow: hidden;
-    /* overflow-y: hidden; для вертикального */
-    /* overflow-x: hidden; для горизонтального */
     min-width: 0;
 }
 .gallery__title {
@@ -1668,16 +1614,9 @@ span {
 .gd2021 {
     background-image: url(../img/photoGallery/data/mobail/2021-1x.png);
 }
-
 .photo-galery__wrapper .swiper {
     width: 100%;
-    /* height: auto; */
 }
-.photo-galery__wrapper .swiper-wrapper {
-}
-.photo-galery__wrapper.swiper-slide {
-}
-
 .photo-galery__wrapper .swiper-pagination {
     display: none;
 }
@@ -1718,7 +1657,6 @@ span {
         margin-top: 150px;
     }
     .photo-galery__wrapper .item {
-        /* margin: 0 auto; */
         width: 252px;
         height: 600px;
         position: relative;
@@ -1730,7 +1668,6 @@ span {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        /* position: absolute; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1740,9 +1677,6 @@ span {
         position: relative;
         width: 204px;
         height: 127px;
-        /* height: 127px; */
-        /* top: 100px;
-        left: 5px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1779,7 +1713,6 @@ span {
         line-height: 63px;
     }
     .photo-galery__wrapper .swiper-pagination {
-        /* color: #efefef; */
         display: block;
         top: 670px;
     }
@@ -1803,7 +1736,6 @@ span {
         color: #efefef;
     }
     .photo-galery__wrapper .item {
-        /* margin: 0 auto; */
         width: 252px;
         height: 600px;
         position: relative;
@@ -1815,7 +1747,6 @@ span {
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
-        /* position: absolute; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1898,14 +1829,11 @@ span {
 }
 .place__event {
     position: relative;
-    /* width: 360px; */
     margin: 0 auto;
     margin-top: 50px;
     padding: 0 40px 0;
 }
 .place__title {
-    /* width: 287px; */
-    /* padding: 0 26px 0; */
     margin: 0 auto;
     position: relative;
 }
@@ -1919,10 +1847,8 @@ span {
     background-size: cover;
 }
 .place__text {
-    /* width: 295px; */
     margin: 0 auto;
     position: relative;
-    /* padding: 0 26px 0; */
 }
 .place__point-relative {
     position: relative;
@@ -2018,8 +1944,6 @@ span {
     margin-top: 16px;
     margin-bottom: 33px;
 }
-.general__partners {
-}
 .general__name {
     margin-bottom: 33px;
 }
@@ -2046,8 +1970,6 @@ span {
     height: 78px;
     background-image: url(../img/partners/general/home-heat.png);
 }
-.junior__partners {
-}
 .junior__name {
     margin-bottom: 16px;
 }
@@ -2057,7 +1979,6 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-content: space-between; */
 }
 .junior__container-desctop {
     display: none;
@@ -2298,33 +2219,15 @@ span {
 }
 .container__policy {
     width: 100%;
-    /* height: 129px; */
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.policy__cookie {
-}
-.policy__personal-information {
-}
-.policy__privacy {
-}
-.agreement {
-}
 .contEvent__box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
-.dateConf {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
-}
-.event__date {
-}
-.event__name {
 }
 @media screen and (min-width: 360px) {
     .agreement {
@@ -2436,12 +2339,6 @@ span {
         margin: 0;
     }
 }
-
-/*.............................. КРАСНЫЕ ЛИНИИ */
-* {
-    /* outline: 1px solid red; */
-}
-
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
