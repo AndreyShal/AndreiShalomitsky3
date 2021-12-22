@@ -2153,6 +2153,12 @@ span {
         height: auto;
         margin-bottom: 64px;
     }
+    .kerama:hover {
+        background-image: url(../img/partners/general/kerama-color.png);
+    }
+    .home-heat:hover {
+        background-image: url(../img/partners/general/home-heat-color.png);
+    }
     .junior__container {
         display: none;
     }
@@ -2187,6 +2193,18 @@ span {
     }
     .junior__name {
         margin-bottom: 32px;
+    }
+    .expostroy:hover {
+        background-image: url(../img/partners/junior/expostroy-color.png);
+    }
+    .flatStone:hover {
+        background-image: url(../img/partners/junior/flatStone-color.png);
+    }
+    .sofia:hover {
+        background-image: url(../img/partners/junior/sofia-color.png);
+    }
+    .varman:hover {
+        background-image: url(../img/partners/junior/varman-color.png);
     }
 }
 .footer {
@@ -2234,6 +2252,21 @@ span {
 }
 .networks__telegram {
     background-image: url(../img/socialNetworks/telegram.png);
+}
+.networks__instagram:hover {
+    background-image: url(../img/socialNetworks/instagram-color.png);
+}
+.networks__vk:hover {
+    background-image: url(../img/socialNetworks/vk-color.png);
+}
+.networks__facebook:hover {
+    background-image: url(../img/socialNetworks/facebook-color.png);
+}
+.networks__twiter:hover {
+    background-image: url(../img/socialNetworks/twiter-color.png);
+}
+.networks__telegram:hover {
+    background-image: url(../img/socialNetworks/telegram-color.png);
 }
 .footer__text {
     margin-top: 15px;
