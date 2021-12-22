@@ -1808,19 +1808,19 @@ span {
         background-image: url(../img/photoGallery/data/desctop/2021.png);
         opacity: 0.8;
     }
-    .gd2017:hover {
+    .gt1:hover .gd2017 {
         background-image: url(../img/photoGallery/data/desctop/2017-color.png);
     }
-    .gd2018:hover {
+    .gt2:hover .gd2018 {
         background-image: url(../img/photoGallery/data/desctop/2018-color.png);
     }
-    .gd2019:hover {
+    .gt3:hover .gd2019 {
         background-image: url(../img/photoGallery/data/desctop/2019-color.png);
     }
-    .gd2020:hover {
+    .gt4:hover .gd2020 {
         background-image: url(../img/photoGallery/data/desctop/2020-color.png);
     }
-    .gd2021:hover {
+    .gt5:hover .gd2021 {
         background-image: url(../img/photoGallery/data/desctop/2021-color.png);
     }
     .swiper2 {
