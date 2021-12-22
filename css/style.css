@@ -1695,6 +1695,21 @@ span {
         width: 460px;
         margin: 0 auto;
     }
+    .gt1 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2017-2x.jpg);
+    }
+    .gt2 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2018-2x.jpg);
+    }
+    .gt3 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2019-2x.jpg);
+    }
+    .gt4 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2020-2x.jpg);
+    }
+    .gt5 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2021-2x.jpg);
+    }
 }
 @media screen and (min-width: 768px) {
     .photo-galery__wrapper {
@@ -1735,16 +1750,19 @@ span {
         margin-right: 3%;
     }
     .gt1 {
-        background-image: url(../img/photoGallery/foto2017.jpg);
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2017-3x.jpg);
     }
     .gt2 {
-        background-image: url(../img/photoGallery/foto2018.jpg);
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2018-3x.jpg);
     }
     .gt3 {
-        background-image: url(../img/photoGallery/foto2019.jpg);
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2019-3x.jpg);
     }
     .gt4 {
-        background-image: url(../img/photoGallery/foto2020.jpg);
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2020-3x.jpg);
+    }
+    .gt5 {
+        background-image: url(../img/photoGallery/dadafoto/mobail/foto2021-3x.jpg);
     }
     .swiper2 {
         height: 818px;
