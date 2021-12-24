@@ -146,7 +146,12 @@ function toggleMe3() {
 
     return true;
 }
-
+let scroll__botton = document.querySelectorAll(".scroll__botton");
+for (let i = 0; i < scroll__botton.length; i++) {
+    scroll__botton[i].addEventListener("click", toggleMenu);
+    function toggleMenu() {
+        document.getElementById('sweeties').classList.toggle('open');
+    };
+}
 
 /* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ КОНЕЦ......................*/
-

@@ -251,7 +251,8 @@ span {
 .menu__absolute ul li {
     margin-bottom: 24px;
 }
-.menu__absolute .become__partner {
+#button-menu {
+    display: block;
     margin-left: 20px;
 }
 .bottom__menu {
