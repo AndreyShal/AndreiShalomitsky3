@@ -677,6 +677,9 @@ span {
     .about__txt {
         display: none;
     }
+    .about__txt__desctop {
+        display: block;
+    }
     .expend {
         display: none;
     }

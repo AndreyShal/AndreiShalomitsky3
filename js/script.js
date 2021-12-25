@@ -76,7 +76,10 @@ var swiper2 = new Swiper('.swiper2', {
 /* ..........................................РАЗВЕРНУТЬ-СВЕРНУТЬ НАЧАЛО......................*/
 
 document.getElementById("expend1").addEventListener('click', toggleMe);
-toggleMe()
+const mediaQuery = window.matchMedia('(max-width: 1367px)')
+if (mediaQuery.matches) {
+    toggleMe()
+}
 function toggleMe() {
     let newHTML1 = '<div id="expend1" class="expend"><a href="#"> \
     Свернуть >>> </a></div>';
@@ -102,7 +105,10 @@ function toggleMe() {
     return true;
 }
 document.getElementById("expend2").addEventListener('click', toggleMe2);
-toggleMe2()
+const mediaQuery2 = window.matchMedia('(max-width: 1367px)')
+if (mediaQuery2.matches) {
+    toggleMe2()
+}
 function toggleMe2() {
     let newHTML1 = '<div id="expend2" class="expend"><a href="#"> \
     Свернуть >>> </a></div>';
