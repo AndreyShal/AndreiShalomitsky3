@@ -2349,11 +2349,14 @@ span {
     margin-top: 30px;
 }
 .developers h6 {
-    font-size: 12px;
+    font-size: 8px;
 }
 @media screen and (min-width: 768px) {
     .developers {
         margin-top: 60px;
+    }
+    .developers h6 {
+        font-size: 12px;
     }
 }
 @media screen and (min-width: 1378px) {
