@@ -602,6 +602,12 @@ span {
         background-position: center center;
         background-size: contain;
     }
+    .audience__block {
+        margin-bottom: 50px;
+    }
+    .audience:after {
+        display: none;
+    }
     .audience::before {
         content: "";
         display: block;
@@ -650,6 +656,9 @@ span {
     .about__txt__desctop {
         font-size: 24px;
         line-height: 150%;
+    }
+    .audience:after {
+        display: none;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -724,6 +733,7 @@ span {
         background-size: contain;
     }
     .audience:after {
+        content: none;
         width: 165px;
         height: 425px;
         top: 39px;
