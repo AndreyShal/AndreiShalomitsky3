@@ -468,10 +468,13 @@ span {
     padding-left: 40px;
     padding-right: 40px;
 }
-.about__txt {
-    margin-top: 32px;
+.about__txt-mobail1 {
+    margin-top: 45px;
 }
-.about__txt__desctop {
+.expend-btn__hidden {
+    display: none;
+}
+.about__txt-desctop {
     display: none;
 }
 .about__title {
@@ -480,16 +483,15 @@ span {
 .about__title h2 {
     font-size: 35px;
 }
-.expend {
-    margin-top: 32px;
-}
-.expend a {
+.js-expend-btn {
     font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 22px;
     color: #ff00c6;
+    margin-top: 32px;
+    cursor: pointer;
 }
 .audience {
     position: relative;
@@ -600,7 +602,7 @@ span {
         background-position: center center;
         background-size: contain;
     }
-    .audience:after {
+    .audience::before {
         content: "";
         display: block;
         height: 517px;
@@ -677,7 +679,16 @@ span {
     .about__txt {
         display: none;
     }
-    .about__txt__desctop {
+    .about__txt-mobail1 {
+        display: none;
+    }
+    .about__txt-mobail2 {
+        display: none;
+    }
+    .js-expend-btn {
+        display: none;
+    }
+    .about__txt-desctop {
         display: block;
     }
     .expend {
@@ -1268,6 +1279,9 @@ span {
 .program__title {
     margin-bottom: 32px;
 }
+.program__text-desctop {
+    display: none;
+}
 .timetable__title {
     display: flex;
     justify-content: space-around;
@@ -1382,11 +1396,13 @@ span {
         width: 1030px;
         margin: 0 auto;
     }
-
-    .prgram__text-mobail {
+    .prgram__text-mobail1 {
         display: none;
     }
-    .program__text-fool {
+    .prgram__text-mobail2 {
+        display: none;
+    }
+    .program__text-desctop {
         display: block;
     }
 }
