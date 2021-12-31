@@ -89,6 +89,8 @@ aboutButtonNode.addEventListener('click', () => {
         document.querySelector('.about__txt-mobail2').classList.add('expend-btn__hidden');
     }
 });
+
+
 const programdButtonNode = document.querySelector("#js-programTxt-btn");
 let isProgramButtonPressed = false;
 
